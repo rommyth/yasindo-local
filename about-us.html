@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Yasindo | Asuransi Satwa Indonesia</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png" />
+
+    <meta
+      name="description"
+      content="YASINDO adalah platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia. Lindungi kesehatan dan kesejahteraan hewan Anda dengan solusi asuransi cerdas, premi fleksibel, dan layanan klaim mudah." />
+    <meta
+      name="keywords"
+      content="asuransi hewan, asuransi ternak, asuransi kucing, asuransi anjing, perlindungan hewan, YASINDO, asuransi Indonesia, klaim asuransi hewan, premi asuransi hewan, dana abadi satwa" />
+    <meta name="author" content="YASINDO" />
+    <meta property="og:title" content="YASINDO | Asuransi Satwa Indonesia" />
+    <meta
+      property="og:description"
+      content="Platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia. Perlindungan komprehensif, premi fleksibel, dan layanan terbaik untuk hewan Anda." />
+    <meta property="og:image" content="assets/logo/brand.webp" />
+    <meta property="og:url" content="https://yasindo.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YASINDO | Asuransi Satwa Indonesia" />
+    <meta name="twitter:description" content="Lindungi hewan peliharaan dan ternak Anda dengan asuransi terbaik dari YASINDO." />
+    <meta name="twitter:image" content="assets/logo/brand.webp" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary--soft: #cfb8e6;
+        --color-primary--main: #5f358b;
+        --color-primary--dark: #2a074e;
+        --color-primary--main-hover: #6b4297;
+        --color-primary--light: #f7f0ff;
+        --color-secondary--main: #d1444a;
+        --color-secondary--main-hover: #d45c62;
+        --color-secondary--light: #ffe9ea;
+      }
+
+      .active {
+        @apply text-primary--main border-b-3 border-b-primary--main;
+      }
+    </style>
+
+    <!-- SwiperJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Fontawesome v7 icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="bg-white sticky w-full z-99 top-0 start-0 border-b border-gray-200">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/logo/brand.webp" class="h-12 md:h-16" alt="Flowbite Logo" />
+        </a>
+        <div class="flex md:order-2 space-x-1">
+          <a href="#" class="hidden md:block font-semibold block px-4 py-2 text-black rounded-sm" aria-current="page">Kontak</a>
+
+          <!-- Pre login -->
+          <div class="hidden">
+            <button
+              type="button"
+              class="text-primary--main hover:text-primary--main bg-primary--light hover:bg-primary--soft font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Masuk
+            </button>
+            <button type="button" class="text-white bg-primary--main hover:bg-purple-800 font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Daftar
+            </button>
+          </div>
+
+          <!-- Logged in -->
+          <div>
+            <a href="my-profile.html" class="flex flex-row items-center gap-2">
+              <img src="https://placehold.co/200x200.png" class="w-10 h-10 rounded-full border border-gray-200" />
+              <i class="fa-solid fa-chevron-down text-xs"></i>
+            </a>
+          </div>
+
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between w-full hidden md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="partnership.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Partnership</a
+              >
+            </li>
+            <li>
+              <a
+                href="about-us.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main active"
+                aria-current="page"
+                >Tentang Kita</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative" style="background-image: url('assets/images/bg-about-us.jpg'); background-size: cover; background-position: center">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-primary--dark/60"></div>
+      <div class="relative z-30 max-w-4xl mx-auto px-4 py-24 md:py-72">
+        <h1 class="text-3xl md:text-4xl md:text-7xl/20 font-bold text-white text-center">Because Every Life Deserves Protection</h1>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-24 px-4">
+        <h2 class="font-bold text-4xl text-black text-center">Siapa kita?</h2>
+        <p class="mt-6 text-black text-center text-base md:text-lg">
+          YASINDO (Yayasan Satwa Indonesia) adalah lembaga yang berkomitmen untuk meningkatkan kesejahteraan hewan di Indonesia melalui pendekatan
+          perlindungan, edukasi, dan kolaborasi.
+          <br />
+          <br />
+          YASINDO hadir sebagai wadah yang menjembatani kepedulian masyarakat terhadap hewan dengan program-program nyata seperti asuransi hewan, Dana
+          Abadi Satwa (DAS), kemitraan Pet Care, serta dukungan bagi shelter dan komunitas penyelamat hewan. Dengan semangat “Because Every Life
+          Deserves Protection”, YASINDO berupaya menciptakan ekosistem yang berkelanjutan bagi kesehatan dan kesejahteraan hewan peliharaan, ternak,
+          maupun satwa liar di Indonesia.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-24 px-4">
+        <h2 class="font-bold text-4xl text-black text-center">Tujuan Kita</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <img src="assets/images/about-yasindo.webp" alt="" class="w-full h-auto object-cover aspect-square rounded-3xl" />
+          <div class="">
+            <p class="text-black text-base md:text-xl">
+              YASINDO hadir untuk melindungi dan menyejahterakan hewan di Indonesia — dari hewan peliharaan hingga hewan ternak. Kami membantu pemilik
+              hewan agar lebih tenang dengan solusi perlindungan, edukasi, dan dukungan nyata bagi kesejahteraan satwa.
+            </p>
+            <p class="text-black text-base md:text-xl mt-5">
+              Melalui kolaborasi dengan berbagai pihak, YASINDO ingin membangun ekosistem yang peduli, aman, dan berkelanjutan bagi semua hewan.
+              Bersama, kita wujudkan Indonesia yang lebih ramah dan bertanggung jawab terhadap satwa.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <div
+            class="flex flex-col md:flex-row rounded-4xl items-center overflow-hidden"
+            style="background-image: url('assets/images/bg-gradient-purple.webp'); background-size: cover; background-position: center">
+            <div class="flex-1 p-6 md:p-12">
+              <quote class="font-bold text-white text-xl md:text-3xl"
+                >“Setiap hewan berhak merasa aman dan dicintai. Melalui YASINDO, kami ingin menjadikan perlindungan satwa sebagai bagian dari gaya
+                hidup penuh kepedulian.”</quote
+              >
+              <div class="block mt-4 text-white text-sm italic">- The Founder</div>
+            </div>
+            <div class="md:flex-1 h-90">
+              <img src="assets/images/person-founder.png" alt="" class="w-full h-full object-cover object-[0%_19%] scale-180 md:scale-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-24 px-4">
+        <h2 class="font-bold text-4xl text-black text-center">Cek kami di Sosial Media!</h2>
+        <div class="mt-12">
+          <div class="swiper" id="list-galery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/sosmed-1.jpg" alt="Galeri 1" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/sosmed-2.jpg" alt="Galeri 2" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/sosmed-3.jpg" alt="Galeri 3" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/galery-1.png" alt="Galeri 4" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/galery-2.png" alt="Galeri 5" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/galery-3.png" alt="Galeri 6" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination !relative !mt-5"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev !top-[calc(50%-1.2rem)]"></div>
+            <div class="swiper-button-next !top-[calc(50%-1.2rem)]"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="font-bold text-4xl text-black text-center"><span class="text-primary--main">YASINDO</span> Siap Membantumu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-12 gap-4">
+          <div class="flex flex-row items-center gap-4 bg-primary--light rounded-xl p-6">
+            <img src="assets/icons/mail.svg" alt="" class="h-12 object-contain" />
+            <div>
+              <h4 class="font-bold text-black text-lg">Email</h4>
+              <a href="mailto:cs@yasindo.com" class="text-primary--main">cs@yasindo.com</a>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4 bg-secondary--light rounded-xl p-6">
+            <img src="assets/icons/phone.svg" alt="" class="h-12 object-contain" />
+            <div>
+              <h4 class="font-bold text-black text-lg">Nomor Telepon</h4>
+              <a href="tel:02259313592" class="text-secondary--main">(022) 5931-3592</a>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4 bg-yellow-50 rounded-xl p-6">
+            <img src="assets/icons/whatsapp.svg" alt="" class="h-12 object-contain" />
+            <div>
+              <h4 class="font-bold text-black text-lg">Layanan & Bantuan</h4>
+              <a href="https://wa.me/6287822773698" class="text-yellow-600">+62 878-2277-3698</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative">
+      <div class="absolute bottom-0 left-0 right-0 w-full h-1/2 bg-primary--soft"></div>
+      <div class="max-w-5xl mx-auto py-8 px-4 z-20 relative">
+        <div class="flex flex-col md:flex-row items-start h-auto md:min-h-90">
+          <div class="flex-[1.5] relative h-full">
+            <div class="absolute inset-0 bg-primary--main/30 z-20"></div>
+            <img src="assets/images/sub-aboutus.webp" alt="" class="w-full h-full object-cover" />
+          </div>
+          <div class="flex-1 p-6 md:p-12 bg-primary--main h-full flex flex-col">
+            <h3 class="font-bold text-2xl text-white">Subscribe untuk dapatkan diskon dan penawaran menarik untuk polis pertamamu!</h3>
+            <p class="text-white/80 mt-4">Akses ekslusif ke produk-produk dan penawaran khusus hanya dengan subscribe newsletter kami</p>
+            <div class="flex-1"></div>
+            <input type="email" placeholder="Masukkan email kamu" class="w-full rounded-lg p-4 bg-white" />
+            <a
+              href="#"
+              class="block w-full mt-6 px-6 py-3 bg-primary--soft text-primary--main text-center font-semibold rounded-lg hover:bg-primary--soft-hover hover:shadow-lg"
+              >Langganan</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary--main">
+      <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div>
+            <img src="assets/logo/brand.webp" alt="YASINDO Logo" class="h-15 object-contain" />
+            <p class="text-white text-sm mt-4">
+              YASINDO adalah platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia, menyediakan perlindungan komprehensif untuk
+              kesehatan dan kesejahteraan hewan Anda.
+            </p>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Compoany</h6>
+            <ul class="mt-4 *:mt-2">
+              <li><a href="#" class="text-white hover:text-white/80">Produk</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Partnership</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Tentang Kita</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Tearms</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Subscribe</h6>
+            <div class="mt-4">
+              <p class="text-white/50">Subscribe to stay tuned for new web design and latest updates. Let's do it!</p>
+              <div class="flex flex-col items-start gap-4 mt-4">
+                <input class="bg-white w-[90%] rounded-lg h-9" />
+                <button class="bg-primary--dark text-white text-sm rounded-lg px-6 py-2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Sosial Media</h6>
+            <ul class="mt-4 *:mt-2">
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-facebook-f"></i> Facbook</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-x"></i> X</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-200 mt-8 pt-6 text-center">
+          <p class="text-sm text-white/70">&copy; 2025 YASINDO. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const config = {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 24,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      };
+      const swiperGalery = new Swiper("#list-galery", config);
+    </script>
+  </body>
+</html>

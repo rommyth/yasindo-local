@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yasindo | Asuransi Satwa Indonesia</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png" />
+
+    <meta
+      name="description"
+      content="YASINDO adalah platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia. Lindungi kesehatan dan kesejahteraan hewan Anda dengan solusi asuransi cerdas, premi fleksibel, dan layanan klaim mudah." />
+    <meta
+      name="keywords"
+      content="asuransi hewan, asuransi ternak, asuransi kucing, asuransi anjing, perlindungan hewan, YASINDO, asuransi Indonesia, klaim asuransi hewan, premi asuransi hewan, dana abadi satwa" />
+    <meta name="author" content="YASINDO" />
+    <meta property="og:title" content="YASINDO | Asuransi Satwa Indonesia" />
+    <meta
+      property="og:description"
+      content="Platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia. Perlindungan komprehensif, premi fleksibel, dan layanan terbaik untuk hewan Anda." />
+    <meta property="og:image" content="assets/logo/brand.webp" />
+    <meta property="og:url" content="https://yasindo.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YASINDO | Asuransi Satwa Indonesia" />
+    <meta name="twitter:description" content="Lindungi hewan peliharaan dan ternak Anda dengan asuransi terbaik dari YASINDO." />
+    <meta name="twitter:image" content="assets/logo/brand.webp" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary--soft: #cfb8e6;
+        --color-primary--main: #5f358b;
+        --color-primary--dark: #2a074e;
+        --color-primary--main-hover: #6b4297;
+        --color-primary--light: #f7f0ff;
+        --color-secondary--main: #d1444a;
+        --color-secondary--main-hover: #d45c62;
+        --color-secondary--light: #ffe9ea;
+      }
+
+      .active {
+        @apply text-primary--main border-b-3 border-b-primary--main;
+      }
+    </style>
+
+    <!-- SwiperJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Fontawesome v7 icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/logo/brand.webp" class="h-12 md:h-16" alt="Flowbite Logo" />
+        </a>
+        <div class="flex md:order-2 space-x-1">
+          <a href="#" class="hidden md:block font-semibold block px-4 py-2 text-black rounded-sm" aria-current="page">Kontak</a>
+
+          <!-- Pre login -->
+          <div class="hidden">
+            <button
+              type="button"
+              class="text-primary--main hover:text-primary--main bg-primary--light hover:bg-primary--soft font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Masuk
+            </button>
+            <button type="button" class="text-white bg-primary--main hover:bg-purple-800 font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Daftar
+            </button>
+          </div>
+
+          <!-- Logged in -->
+          <div>
+            <a href="my-profile.html" class="flex flex-row items-center gap-2">
+              <img src="https://placehold.co/200x200.png" class="w-10 h-10 rounded-full border border-gray-200" />
+              <i class="fa-solid fa-chevron-down text-xs"></i>
+            </a>
+          </div>
+
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between w-full hidden md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main active"
+                aria-current="page"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="partnership.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Partnership</a
+              >
+            </li>
+            <li>
+              <a
+                href="about-us.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Tentang Kita</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-gradient-to-b from-primary--main to-primary--light">
+      <div style="background-image: url('assets/images/bg-banner.webp'); background-size: cover; background-position: center">
+        <div class="py-48 max-w-2xl mx-auto">
+          <div class="text-center">
+            <h2 class="font-bold text-white text-3xl">Asuransi Hewan Pertama yang Peduli Lebih dari Sekadar Perlindungan!</h2>
+            <h6 class="font-regular text-lg text-white mt-4">
+              Solusi asuransi cerdas yang melindungi kesehatan hewan peliharaan dan ternak, membantu Anda fokus pada kebahagiaan dan produktivitas
+              tanpa khawatir risiko tak terduga.
+            </h6>
+            <a
+              href="#"
+              class="mt-6 inline-flex items-center text-primary--main bg-primary--soft font-semibold rounded-lg text-sm px-6 py-3 text-center hover:shadow-lg duration-300">
+              <span>Pelajari Lebih Lanjut</span>
+              <svg width="20" height="20" viewBox="0 0 24 25" class="ml-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.5 7L12.2093 12.7093C12.3698 12.8698 12.6302 12.8698 12.7907 12.7093L18.5 7"
+                  stroke="#5F358B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M6.5 12L12.2492 17.7492C12.3877 17.8877 12.6123 17.8877 12.7508 17.7492L18.5 12"
+                  stroke="#5F358B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="-mt-16">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-primary--light rounded-xl p-6">
+            <img src="assets/ilustration/asuransi-hewan.png" alt="" class="w-24 h-24 object-contain" />
+            <h3 class="font-bold text-2xl/7 text-black mt-4">
+              <span>Asuransi</span><br />
+              <span class="text-primary--main">Hewan Peliharaan</span>
+            </h3>
+            <p class="font-regular text-base text-gray-700 mt-4">
+              Lindungi sahabat berbulu Anda dari risiko tak terduga. Dengan asuransi hewan peliharaan, biaya perawatan kesehatan jadi lebih ringan,
+              sehingga Anda bisa fokus memberi kasih sayang tanpa khawatir finansial.
+            </p>
+            <a href="#" class="inline-block px-6 py-4 mt-4 bg-primary--main hover:bg-primary--main-hover text-white rounded-lg text-sm"
+              >Lebih Lanjut</a
+            >
+          </div>
+          <div class="bg-secondary--light rounded-xl p-6">
+            <img src="assets/ilustration/asuransi-ternak.png" alt="" class="w-24 h-24 object-contain" />
+            <h3 class="font-bold text-2xl/7 text-black mt-4">
+              <span>Asuransi</span><br />
+              <span class="text-secondary--main">Hewan Ternak</span>
+            </h3>
+            <p class="font-regular text-base text-gray-700 mt-4">
+              Jaga nilai investasi dan sumber penghidupan Anda. Asuransi hewan ternak memberi perlindungan dari risiko penyakit, kecelakaan, hingga
+              kematian, sehingga usaha tetap stabil dan produktif.
+            </p>
+            <a href="#" class="inline-block px-6 py-4 mt-4 bg-secondary--main hover:bg-secondary--main-hover text-white rounded-lg text-sm"
+              >Lebih Lanjut</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-24 px-4">
+        <h2 class="font-bold text-4xl text-black text-center">Alasan Asuransi Hewan Peliharaan maupun Ternak Penting</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+          <div class="bg-neutral-100 rounded-xl p-6 md:p-12">
+            <img src="assets/ilustration/reason-1.png" alt="" class="w-24 h-24 object-contain" />
+            <h3 class="font-bold text-xl/7 text-primary--main mt-6">Perlindungan dari Risiko Tak Terduga</h3>
+            <p class="font-regular text-base text-gray-700 mt-2">
+              Baik hewan peliharaan maupun ternak bisa terkena penyakit atau kecelakaan kapan saja — asuransi membantu menanggung biayanya.
+            </p>
+          </div>
+          <div class="bg-neutral-100 rounded-xl p-6 md:p-12">
+            <img src="assets/ilustration/reason-2.png" alt="" class="w-24 h-24 object-contain" />
+            <h3 class="font-bold text-xl/7 text-primary--main mt-6">Menjaga Kesehatan dan Nilai Investasi</h3>
+            <p class="font-regular text-base text-gray-700 mt-2">
+              Hewan peliharaan adalah bagian dari keluarga, sementara ternak adalah aset berharga. Keduanya butuh perlindungan agar tetap sehat dan
+              bernilai.
+            </p>
+          </div>
+          <div class="bg-neutral-100 rounded-xl p-6 md:p-12">
+            <img src="assets/ilustration/reason-3.png" alt="" class="w-24 h-24 object-contain" />
+            <h3 class="font-bold text-xl/7 text-primary--main mt-6">Memberi Rasa Aman dan Tenang</h3>
+            <p class="font-regular text-base text-gray-700 mt-2">
+              Dengan perlindungan asuransi, Anda bisa fokus memberi kasih sayang dan mengembangkan usaha tanpa cemas akan kerugian mendadak.
+            </p>
+          </div>
+          <div class="bg-neutral-100 rounded-xl p-6 md:p-12">
+            <img src="assets/ilustration/reason-4.png" alt="" class="w-24 h-24 object-contain" />
+            <h3 class="font-bold text-xl/7 text-primary--main mt-6">Mendukung Keberlanjutan dan Produktivitas</h3>
+            <p class="font-regular text-base text-gray-700 mt-2">
+              Asuransi memastikan kesehatan hewan tetap terjaga, sehingga aktivitas, produktivitas, dan kualitas hidup—baik untuk Anda maupun
+              hewan—tetap optimal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rounded-t-3xl bg-primary--light">
+      <div class="max-w-7xl mx-auto py-24 px-4">
+        <h2 class="font-bold text-4xl text-black text-center">Kenapa harus gabung YASINDO?</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-24 mt-24">
+          <div class="flex flex-col items-center justify-center">
+            <img src="assets/ilustration/why-yasindo-1.png" alt="" class="w-32 h-32" />
+            <p class="mt-8 text-center font-bold text-lg text-primary--main">Perlindungan Menyeluruh</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="assets/ilustration/why-yasindo-2.png" alt="" class="w-32 h-32" />
+            <p class="mt-8 text-center font-bold text-lg text-primary--main">Klaim Mudah & Cepat</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="assets/ilustration/why-yasindo-3.png" alt="" class="w-32 h-32" />
+            <p class="mt-8 text-center font-bold text-lg text-primary--main">Premi Fleksibel</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="assets/ilustration/why-yasindo-4.png" alt="" class="w-32 h-32" />
+            <p class="mt-8 text-center font-bold text-lg text-primary--main">Jangkauan Luas</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="assets/ilustration/why-yasindo-5.png" alt="" class="w-32 h-32" />
+            <p class="mt-8 text-center font-bold text-lg text-primary--main">Dukungan Mitra K&P Poin</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="assets/ilustration/why-yasindo-6.png" alt="" class="w-32 h-32" />
+            <p class="mt-8 text-center font-bold text-lg text-primary--main">Perlindungan Finansial Optimal</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="assets/ilustration/why-yasindo-7.png" alt="" class="w-32 h-32" />
+            <p class="mt-8 text-center font-bold text-lg text-primary--main">Layanan Darurat &Konsultasi Kesehatan</p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="assets/ilustration/why-yasindo-8.png" alt="" class="w-32 h-32" />
+            <p class="mt-8 text-center font-bold text-lg text-primary--main">Mendukung Kesejahteraan Hewan & Pemiliknya</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary--soft">
+      <div class="max-w-7xl mx-auto py-24 px-4">
+        <!-- Asuransi Hewan Peliharaan Start -->
+        <div class="relative">
+          <h2 class="font-bold text-4xl text-primary--main text-start">Produk Asuransi Hewan Peliharaan</h2>
+
+          <div id="list-produk-peliharaan" class="swiper mt-12">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg-white w-full p-3 rounded-2xl">
+                  <img src="assets/images/kucing.webp" alt="" class="w-full aspect-4/3 rounded-xl object-cover" />
+                  <h3 class="font-bold text-lg text-primary--main text-center mt-4">Asuransi Kucing</h3>
+                  <a href="#" class="block mt-4 py-3 w-full text-center bg-primary--main text-white rounded-lg hover:bg-primary--main-hover"
+                    >Lihat Produk</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white w-full p-3 rounded-2xl">
+                  <img src="assets/images/anjing.webp" alt="" class="w-full aspect-4/3 rounded-xl object-cover" />
+                  <h3 class="font-bold text-lg text-primary--main text-center mt-4">Asuransi Anjing</h3>
+                  <a href="#" class="block mt-4 py-3 w-full text-center bg-primary--main text-white rounded-lg hover:bg-primary--main-hover"
+                    >Lihat Produk</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white w-full p-3 rounded-2xl">
+                  <img src="assets/images/burung-hias.webp" alt="" class="w-full aspect-4/3 rounded-xl object-cover" />
+                  <h3 class="font-bold text-lg text-primary--main text-center mt-4">Asuransi Burung Hias</h3>
+                  <a href="#" class="block mt-4 py-3 w-full text-center bg-primary--main text-white rounded-lg hover:bg-primary--main-hover"
+                    >Lihat Produk</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white w-full p-3 rounded-2xl">
+                  <img src="assets/images/ikan.webp" alt="" class="w-full aspect-4/3 rounded-xl object-cover" />
+                  <h3 class="font-bold text-lg text-primary--main text-center mt-4">Asuransi Ikan</h3>
+                  <a href="#" class="block mt-4 py-3 w-full text-center bg-primary--main text-white rounded-lg hover:bg-primary--main-hover"
+                    >Lihat Produk</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white w-full p-3 rounded-2xl">
+                  <img src="assets/images/kelinci.webp" alt="" class="w-full aspect-4/3 rounded-xl object-cover" />
+                  <h3 class="font-bold text-lg text-primary--main text-center mt-4">Asuransi Kelinci</h3>
+                  <a href="#" class="block mt-4 py-3 w-full text-center bg-primary--main text-white rounded-lg hover:bg-primary--main-hover"
+                    >Lihat Produk</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination !relative !mt-5"></div>
+          </div>
+        </div>
+        <!-- Asuransi Hewan Peliharaan End -->
+        <div class="h-15"></div>
+        <!-- Asuransi Hewan Ternak Start -->
+        <div class="relative">
+          <h2 class="font-bold text-4xl text-primary--main text-start">Produk Asuransi Hewan Ternak</h2>
+          <div id="list-produk-ternak" class="swiper mt-12">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg-white w-full p-3 rounded-2xl">
+                  <img src="assets/images/kambing.webp" alt="" class="w-full aspect-4/3 rounded-xl object-cover" />
+                  <h3 class="font-bold text-lg text-primary--main text-center mt-4">Asuransi Kambing</h3>
+                  <a href="#" class="block mt-4 py-3 w-full text-center bg-primary--main text-white rounded-lg hover:bg-primary--main-hover"
+                    >Lihat Produk</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white w-full p-3 rounded-2xl">
+                  <img src="assets/images/sapi.webp" alt="" class="w-full aspect-4/3 rounded-xl object-cover" />
+                  <h3 class="font-bold text-lg text-primary--main text-center mt-4">Asuransi Sapi</h3>
+                  <a href="#" class="block mt-4 py-3 w-full text-center bg-primary--main text-white rounded-lg hover:bg-primary--main-hover"
+                    >Lihat Produk</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white w-full p-3 rounded-2xl">
+                  <img src="assets/images/unggas.webp" alt="" class="w-full aspect-4/3 rounded-xl object-cover" />
+                  <h3 class="font-bold text-lg text-primary--main text-center mt-4">Asuransi Unggas</h3>
+                  <a href="#" class="block mt-4 py-3 w-full text-center bg-primary--main text-white rounded-lg hover:bg-primary--main-hover"
+                    >Lihat Produk</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white w-full p-3 rounded-2xl">
+                  <img src="assets/images/perikanan.webp" alt="" class="w-full aspect-4/3 rounded-xl object-cover" />
+                  <h3 class="font-bold text-lg text-primary--main text-center mt-4">Asuransi Perikanan</h3>
+                  <a href="#" class="block mt-4 py-3 w-full text-center bg-primary--main text-white rounded-lg hover:bg-primary--main-hover"
+                    >Lihat Produk</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white w-full p-3 rounded-2xl">
+                  <img src="assets/images/kuda.webp" alt="" class="w-full aspect-4/3 rounded-xl object-cover" />
+                  <h3 class="font-bold text-lg text-primary--main text-center mt-4">Asuransi Kuda</h3>
+                  <a href="#" class="block mt-4 py-3 w-full text-center bg-primary--main text-white rounded-lg hover:bg-primary--main-hover"
+                    >Lihat Produk</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination !relative !mt-5"></div>
+          </div>
+        </div>
+        <!-- Asuransi Hewan Ternak End -->
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-7xl mx-auto px-4 py-24">
+        <h2 class="font-bold text-4xl text-black text-start">Dana Abadi Satwa (DAS)</h2>
+        <p class="text-gray-700 mt-4">
+          Program pengumpulan dana dari para donatur YASINDO yang bertujuan mendukung perlindungan, perawatan, dan kesejahteraan hewan di Indonesia.
+          Dana ini dikelola secara berkelanjutan untuk memastikan setiap hewan — baik peliharaan, liar, maupun ternak — mendapatkan akses terhadap
+          kehidupan yang sehat, aman, dan layak.
+        </p>
+        <div class="flex flex-col md:flex-row items-start gap-4">
+          <div class="flex-[1.5]">
+            <img src="assets/ilustration/dana-abadi-satwa.webp" alt="das" class="w-full object-contain" />
+            <div class="relative bg-primary--main rounded-xl p-6 mt-4 overflow-hidden">
+              <div class="absolute -top-32 -right-10 w-64 h-64 rounded-full bg-white/10 z-1"></div>
+              <div class="absolute -bottom-32 -left-24 w-64 h-64 rounded-full bg-white/10 z-1"></div>
+              <h6 class="text-white/70 text-lg">Jumlah Dana Abadi Satwa (DAS)</h6>
+              <div class="flex flex-row items-center mt-2 gap-2">
+                <h3 class="font-bold text-4xl/5 text-white">Rp 5.000</h3>
+                <div class="bg-primary--soft rounded-xl px-2 py-1 ml-1 text-base">per bulan</div>
+              </div>
+              <div class="flex flex-row items-start gap-2 mt-2">
+                <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 20C4.47715 20 3.91405e-07 15.5228 8.74228e-07 10C1.35705e-06 4.47715 4.47715 -1.35705e-06 10 -8.74228e-07C15.5228 -3.91405e-07 20 4.47715 20 10C20 15.5228 15.5228 20 10 20ZM10 7.01074C10.5523 7.01074 11 6.56303 11 6.01074L11 5.99902C10.9995 5.44719 10.552 4.99902 10 4.99902C9.44804 4.99902 9.00053 5.44719 9 5.99902L9 6.01074C9 6.56303 9.44772 7.01074 10 7.01074ZM10 15C10.5523 15 11 14.5523 11 14L11 9C11 8.44771 10.5523 8 10 8C9.44772 8 9 8.44771 9 9L9 14C9 14.5523 9.44772 15 10 15Z"
+                    fill="#CFB8E6" />
+                </svg>
+                <p class="text-xs text-white/70 mt-1">
+                  Hanya membayar Rp5.000/bulan, anda sudah ikut dalam membantu menyediakan perlengkapan medis dan menyelamatkan satwa terlantar.
+                </p>
+              </div>
+              <a
+                href="dana-abadi-satwa.html"
+                class="relative z-20 inline-block mt-4 px-4 py-3 text-center bg-secondary--main text-white rounded-lg hover:bg-secondary--main-hover"
+                >Ikut Berkontribusi</a
+              >
+            </div>
+          </div>
+          <div class="flex-2">
+            <h3 class="font-bold text-2xl/7 text-primary--main mt-6 md:mt-0">Manfaat Dana Abadi Satwa (DAS)</h3>
+            <ul class="mt-4 *:mt-4">
+              <li class="flex flex-row items-start p-4 rounded-xl bg-primary--light gap-2">
+                <img src="assets/icons/check-circle.svg" alt="checklist" class="w-6 h-6 mt-1" />
+                <div>
+                  <h6 class="font-medium text-black text-lg">Perawatan & Penyelamatan Hewan Terlantar</h6>
+                  <p class="text-sm text-gray-700">
+                    Dana digunakan untuk mendukung kegiatan penyelamatan, pengobatan, dan perawatan hewan-hewan yang sakit, terlantar, atau menjadi
+                    korban kekerasan.
+                  </p>
+                </div>
+              </li>
+              <li class="flex flex-row items-start p-4 rounded-xl bg-primary--light gap-2">
+                <img src="assets/icons/check-circle.svg" alt="checklist" class="w-6 h-6 mt-1" />
+                <div>
+                  <h6 class="font-medium text-black text-lg">Bantuan untuk Komunitas & Shelter Hewan</h6>
+                  <p class="text-sm text-gray-700">
+                    Memberikan dukungan finansial kepada komunitas dan penampungan hewan agar dapat terus beroperasi dan merawat hewan dengan layak.
+                  </p>
+                </div>
+              </li>
+              <li class="flex flex-row items-start p-4 rounded-xl bg-primary--light gap-2">
+                <img src="assets/icons/check-circle.svg" alt="checklist" class="w-6 h-6 mt-1" />
+                <div>
+                  <h6 class="font-medium text-black text-lg">Edukasi dan Kampanye Kesejahteraan Hewan</h6>
+                  <p class="text-sm text-gray-700">
+                    Membiayai program edukatif dan kampanye publik untuk meningkatkan kesadaran masyarakat tentang pentingnya perlindungan dan
+                    kesejahteraan hewan.
+                  </p>
+                </div>
+              </li>
+              <li class="flex flex-row items-start p-4 rounded-xl bg-primary--light gap-2">
+                <img src="assets/icons/check-circle.svg" alt="checklist" class="w-6 h-6 mt-1" />
+                <div>
+                  <h6 class="font-medium text-black text-lg">Fasilitas Kesehatan & Asuransi Hewan</h6>
+                  <p class="text-sm text-gray-700">
+                    Sebagian dana digunakan untuk membantu program asuransi dan layanan kesehatan hewan peliharaan maupun ternak, agar masyarakat
+                    dapat lebih mudah memberikan perawatan terbaik.
+                  </p>
+                </div>
+              </li>
+              <li class="flex flex-row items-start p-4 rounded-xl bg-primary--light gap-2">
+                <img src="assets/icons/check-circle.svg" alt="checklist" class="w-6 h-6 mt-1" />
+                <div>
+                  <h6 class="font-medium text-black text-lg">Pembangunan Ekosistem Peduli Satwa</h6>
+                  <p class="text-sm text-gray-700">
+                    Mendorong kolaborasi antara donatur, organisasi, dan masyarakat untuk membangun lingkungan yang lebih ramah dan berkelanjutan bagi
+                    satwa.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-7xl mx-auto px-4 py-24">
+        <h2 class="font-bold text-4xl text-black text-center">Mereka yang sudah bergabung dengan YAsindo</h2>
+        <div id="list-feedback" class="swiper mt-12">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="bg-primary--light w-full p-4 rounded-2xl">
+                <quote class="text-gray-700 italic"
+                  >"Baik hewan peliharaan maupun ternak bisa terkena penyakit atau kecelakaan kapan saja — asuransi membantu menanggung
+                  biayanya."</quote
+                >
+                <img src="assets/ilustration/5-star.png" alt="5-star" class="h-4 mt-2" />
+                <h6 class="font-bold text-primary--main text-sm mt-1">Suparno</h6>
+                <h6 class="font-regular text-primary--main text-xs">Asuransi Kucing</h6>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-primary--light w-full p-4 rounded-2xl">
+                <quote class="text-gray-700 italic"
+                  >"Baik hewan peliharaan maupun ternak bisa terkena penyakit atau kecelakaan kapan saja — asuransi membantu menanggung
+                  biayanya."</quote
+                >
+                <img src="assets/ilustration/5-star.png" alt="5-star" class="h-4 mt-2" />
+                <h6 class="font-bold text-primary--main text-sm mt-1">Suparno</h6>
+                <h6 class="font-regular text-primary--main text-xs">Asuransi Kucing</h6>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-primary--light w-full p-4 rounded-2xl">
+                <quote class="text-gray-700 italic"
+                  >"Baik hewan peliharaan maupun ternak bisa terkena penyakit atau kecelakaan kapan saja — asuransi membantu menanggung
+                  biayanya."</quote
+                >
+                <img src="assets/ilustration/5-star.png" alt="5-star" class="h-4 mt-2" />
+                <h6 class="font-bold text-primary--main text-sm mt-1">Suparno</h6>
+                <h6 class="font-regular text-primary--main text-xs">Asuransi Kucing</h6>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-primary--light w-full p-4 rounded-2xl">
+                <quote class="text-gray-700 italic"
+                  >"Baik hewan peliharaan maupun ternak bisa terkena penyakit atau kecelakaan kapan saja — asuransi membantu menanggung
+                  biayanya."</quote
+                >
+                <img src="assets/ilustration/5-star.png" alt="5-star" class="h-4 mt-2" />
+                <h6 class="font-bold text-primary--main text-sm mt-1">Suparno</h6>
+                <h6 class="font-regular text-primary--main text-xs">Asuransi Kucing</h6>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination !relative !mt-5"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-7xl mx-auto px-4 py-24">
+        <h2 class="font-bold text-4xl text-black">Informasi <span class="font-light">terkini</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
+          <div class="bg-neutral-100 rounded-2xl p-4">
+            <img src="assets/images/info-1.webp" alt="" class="w-full aspect-video rounded-xl" />
+            <div class="text-sm text-gray-700 my-3">01 Oct 2025</div>
+            <h4 class="font-bold text-black text-lg">Headline Blog : Informasi terkini terkait asuransi hewan</h4>
+            <p class="text-gray-700 mt-2">
+              Dapatkan update terbaru seputar asuransi hewan peliharaan dan ternak, tips perawatan, serta berita industri terkini di blog kami.
+            </p>
+            <a href="#" class="inline-block mt-4 font-semibold text-primary--main hover:text-primary--main-hover"
+              >Baca Selengkapnya
+              <svg width="24" height="24" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 12L4 12" stroke="#5F358B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M14 18L19.9375 12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375L14 6"
+                  stroke="#5F358B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="bg-neutral-100 rounded-2xl p-4">
+            <img src="assets/images/info-2.webp" alt="" class="w-full aspect-video rounded-xl" />
+            <div class="text-sm text-gray-700 my-3">01 Oct 2025</div>
+            <h4 class="font-bold text-black text-lg">Headline Blog : Informasi terkini terkait asuransi hewan</h4>
+            <p class="text-gray-700 mt-2">
+              Dapatkan update terbaru seputar asuransi hewan peliharaan dan ternak, tips perawatan, serta berita industri terkini di blog kami.
+            </p>
+            <a href="#" class="inline-block mt-4 font-semibold text-primary--main hover:text-primary--main-hover"
+              >Baca Selengkapnya
+              <svg width="24" height="24" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 12L4 12" stroke="#5F358B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M14 18L19.9375 12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375L14 6"
+                  stroke="#5F358B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="bg-neutral-100 rounded-2xl p-4">
+            <img src="assets/images/info-3.webp" alt="" class="w-full aspect-video rounded-xl" />
+            <div class="text-sm text-gray-700 my-3">01 Oct 2025</div>
+            <h4 class="font-bold text-black text-lg">Headline Blog : Informasi terkini terkait asuransi hewan</h4>
+            <p class="text-gray-700 mt-2">
+              Dapatkan update terbaru seputar asuransi hewan peliharaan dan ternak, tips perawatan, serta berita industri terkini di blog kami.
+            </p>
+            <a href="#" class="inline-block mt-4 font-semibold text-primary--main hover:text-primary--main-hover"
+              >Baca Selengkapnya
+              <svg width="24" height="24" class="inline" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 12L4 12" stroke="#5F358B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M14 18L19.9375 12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375L14 6"
+                  stroke="#5F358B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a
+            href="#"
+            class="mt-12 inline-flex items-center text-white bg-primary--main font-semibold rounded-lg text-sm px-6 py-3 text-center hover:shadow-lg duration-300">
+            Lihat Semua Artikel
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-7xl mx-auto px-4 py-24">
+        <h2 class="font-bold text-4xl text-black text-center">Frequently Asked Question <span class="font-light">(FAQ)</span></h2>
+
+        <!-- collapsabled item -->
+        <div id="faq-list" class="mt-12">
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Apa itu asuransi hewan?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Ada berapa produk asuransi di YASINDO?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Bagaimana cara mendaftar dan membeli asuransi hewan peliharaan?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Bagaimana cara mendaftar dan membeli asuransi hewan ternak?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Dimana saja klinik yang menjadi partner atau rekomendasi?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Bagaimana dan dimana saja saya dapat melakukan klaim asuransi?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Apa saja yang dapat ditanggung oleh asransi hewan peliharaan?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Apa saja yang dapat ditanggung oleh asransi hewan ternak?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Apa manfaat asuransi hewan?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Berapa premi asuransi hewan?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 hover:shadow-lg px-4">
+            <div class="flex flex-row items-center justify-between py-4 cursor-pointer">
+              <h3 class="font-semibold text-lg cursor-pointer">Hewan apa saja yang bisa ditanggung oleh asuransi YASINDO?</h3>
+              <i class="fa-solid fa-chevron-down text-primary--main"></i>
+            </div>
+            <div class="hidden">
+              <p class="text-gray-700 pb-4">...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative">
+      <div class="absolute bottom-0 left-0 right-0 w-full h-1/2 bg-primary--soft"></div>
+      <div class="max-w-5xl mx-auto py-8 px-4 z-20 relative">
+        <div class="flex flex-col md:flex-row items-start h-auto md:h-90">
+          <div class="flex-[1.5] relative h-full">
+            <div class="absolute inset-0 bg-primary--main/30 z-20"></div>
+            <img src="assets/images/doctor.webp" alt="" class="w-full h-full object-cover" />
+          </div>
+          <div class="flex-1 p-6 md:p-12 bg-primary--main h-full flex flex-col">
+            <h3 class="font-bold text-2xl text-white">Dapatkan Penawaran Premi Menarik dan Fleksibel!</h3>
+            <p class="text-white/80 mt-4">Gabung dan jadi bagian dari YASINDO untuk perlindungan hewan peliharaan dan ternak anda.</p>
+            <div class="flex-1"></div>
+            <a
+              href="#"
+              class="block w-full mt-6 px-6 py-3 bg-primary--soft text-primary--main text-center font-semibold rounded-lg hover:bg-primary--soft-hover hover:shadow-lg"
+              >Daftar Sekarang!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary--main">
+      <div class="max-w-7xl mx-auto px-4 pt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+          <div>
+            <img src="assets/images/phone-app.webp" alt="" class="w-full h-full object-contain" />
+          </div>
+          <div class="text-white text-center md:text-left">
+            <h3 class="font-bold text-4xl">YASINDO Apps</h3>
+            <p class="text-white/50 mt-6 text-lg">untuk kemudahan akses dimanapun <br />dan kapanpun tanpa ribet!</p>
+            <div class="flex flex-row items-center justify-center md:justify-start gap-4 mt-8">
+              <img src="assets/images/appstore.png" alt="" class="h-12 md:h-17 object-contain" />
+              <img src="assets/images/googleplay.png" alt="" class="h-12 md:h-17 object-contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="font-bold text-4xl text-black text-center"><span class="text-primary--main">YASINDO</span> Siap Membantumu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-12 gap-4">
+          <div class="flex flex-row items-center gap-4 bg-primary--light rounded-xl p-6">
+            <img src="assets/icons/mail.svg" alt="" class="h-12 object-contain" />
+            <div>
+              <h4 class="font-bold text-black text-lg">Email</h4>
+              <a href="mailto:cs@yasindo.com" class="text-primary--main">cs@yasindo.com</a>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4 bg-secondary--light rounded-xl p-6">
+            <img src="assets/icons/phone.svg" alt="" class="h-12 object-contain" />
+            <div>
+              <h4 class="font-bold text-black text-lg">Nomor Telepon</h4>
+              <a href="tel:02259313592" class="text-secondary--main">(022) 5931-3592</a>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4 bg-yellow-50 rounded-xl p-6">
+            <img src="assets/icons/whatsapp.svg" alt="" class="h-12 object-contain" />
+            <div>
+              <h4 class="font-bold text-black text-lg">Layanan & Bantuan</h4>
+              <a href="https://wa.me/6287822773698" class="text-yellow-600">+62 878-2277-3698</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary--main">
+      <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div>
+            <img src="assets/logo/brand.webp" alt="YASINDO Logo" class="h-15 object-contain" />
+            <p class="text-white text-sm mt-4">
+              YASINDO adalah platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia, menyediakan perlindungan komprehensif untuk
+              kesehatan dan kesejahteraan hewan Anda.
+            </p>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Compoany</h6>
+            <ul class="mt-4 *:mt-2">
+              <li>
+                <a href="#" class="text-white hover:text-white/80">Produk</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80">Partnership</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80">Tentang Kita</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80">Tearms</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Subscribe</h6>
+            <div class="mt-4">
+              <p class="text-white/50">Subscribe to stay tuned for new web design and latest updates. Let's do it!</p>
+              <div class="flex flex-col items-start gap-4 mt-4">
+                <input class="bg-white w-[90%] rounded-lg h-9" />
+                <button class="bg-primary--dark text-white text-sm rounded-lg px-6 py-2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Sosial Media</h6>
+            <ul class="mt-4 *:mt-2">
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-facebook-f"></i> Facbook</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-x"></i> X</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-200 mt-8 pt-6 text-center">
+          <p class="text-sm text-white/70">&copy; 2025 YASINDO. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const faqItems = document.querySelectorAll("#faq-list > div");
+      faqItems.forEach((item) => {
+        const header = item.querySelector("div:first-child");
+        const content = item.querySelector("div:last-child");
+        const icon = item.querySelector("i");
+
+        header.addEventListener("click", () => {
+          const isOpen = !content.classList.contains("hidden");
+          if (isOpen) {
+            content.classList.add("hidden");
+            icon.classList.remove("fa-chevron-up");
+            icon.classList.add("fa-chevron-down");
+          } else {
+            content.classList.remove("hidden");
+            icon.classList.remove("fa-chevron-down");
+            icon.classList.add("fa-chevron-up");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      const config = {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 24,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      };
+      const swiperPeliharaan = new Swiper("#list-produk-peliharaan", config);
+      const swiperTernak = new Swiper("#list-produk-ternak", config);
+      const swiperFeedback = new Swiper("#list-feedback", config);
+    </script>
+
+    <!-- nav mobile mode navbar-sticky -->
+  </body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Yasindo | Asuransi Satwa Indonesia</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png" />
+
+    <meta
+      name="description"
+      content="YASINDO adalah platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia. Lindungi kesehatan dan kesejahteraan hewan Anda dengan solusi asuransi cerdas, premi fleksibel, dan layanan klaim mudah." />
+    <meta
+      name="keywords"
+      content="asuransi hewan, asuransi ternak, asuransi kucing, asuransi anjing, perlindungan hewan, YASINDO, asuransi Indonesia, klaim asuransi hewan, premi asuransi hewan, dana abadi satwa" />
+    <meta name="author" content="YASINDO" />
+    <meta property="og:title" content="YASINDO | Asuransi Satwa Indonesia" />
+    <meta
+      property="og:description"
+      content="Platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia. Perlindungan komprehensif, premi fleksibel, dan layanan terbaik untuk hewan Anda." />
+    <meta property="og:image" content="assets/logo/brand.webp" />
+    <meta property="og:url" content="https://yasindo.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YASINDO | Asuransi Satwa Indonesia" />
+    <meta name="twitter:description" content="Lindungi hewan peliharaan dan ternak Anda dengan asuransi terbaik dari YASINDO." />
+    <meta name="twitter:image" content="assets/logo/brand.webp" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary--soft: #cfb8e6;
+        --color-primary--main: #5f358b;
+        --color-primary--dark: #2a074e;
+        --color-primary--main-hover: #6b4297;
+        --color-primary--light: #f7f0ff;
+        --color-secondary--main: #d1444a;
+        --color-secondary--main-hover: #d45c62;
+        --color-secondary--light: #ffe9ea;
+      }
+
+      .active {
+        @apply bg-primary--main text-white;
+      }
+    </style>
+
+    <!-- SwiperJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Fontawesome v7 icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="bg-white sticky w-full z-99 top-0 start-0 border-b border-gray-200">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/logo/brand.webp" class="h-12 md:h-16" alt="Flowbite Logo" />
+        </a>
+        <div class="flex md:order-2 space-x-1">
+          <a href="#" class="hidden md:block font-semibold block px-4 py-2 text-black rounded-sm" aria-current="page">Kontak</a>
+
+          <!-- Pre login -->
+          <div class="hidden">
+            <button
+              type="button"
+              class="text-primary--main hover:text-primary--main bg-primary--light hover:bg-primary--soft font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Masuk
+            </button>
+            <button type="button" class="text-white bg-primary--main hover:bg-purple-800 font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Daftar
+            </button>
+          </div>
+
+          <!-- Logged in -->
+          <div>
+            <a href="my-profile.html" class="flex flex-row items-center gap-2">
+              <img src="https://placehold.co/200x200.png" class="w-10 h-10 rounded-full border border-gray-200" />
+              <i class="fa-solid fa-chevron-down text-xs"></i>
+            </a>
+          </div>
+
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between w-full hidden md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                aria-current="page"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="partnership.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Partnership</a
+              >
+            </li>
+            <li>
+              <a
+                href="about-us.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Tentang Kita</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <img src="assets/images/bg-profile.webp" alt="" class="w-full h-32 object-cover" />
+    </div>
+
+    <section class="bg-primary--light">
+      <div class="max-w-7xl mx-auto pb-4 px-4 relative z-20">
+        <div class="bg-white -mt-12 bg-white p-8 rounded-xl flex flex-col lg:flex-row items-center justify-evenly text-center lg:text-start">
+          <!-- Photo -->
+          <div class="flex flex-row items-center gap-4">
+            <img src="https://placehold.co/50x50.png" alt="" class="w-18 h-18 rounded-full border border-primary--main" />
+            <div>
+              <h4 class="font-bold text-black text-base">Bramsetyo</h4>
+              <p class="text-xs text-primary--main">ID 160123456</p>
+              <a href="#" class="inline-block text-xs text-white bg-primary--main px-2 py-1 rounded-full mt-2">Edit Profile</a>
+            </div>
+          </div>
+          <!-- Divider -->
+          <div class="border-l border-gray-200 lg:h-16 m-4"></div>
+          <!-- Info -->
+          <div class="space-y-2">
+            <div class="flex flex-row items-center gap-2">
+              <i class="fa-solid fa-location-dot text-primary--main"></i>
+              <p class="font-bold text-sm text-black">Surabaya, Jawa Timur Indonesia</p>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <i class="fa-solid fa-phone text-primary--main"></i>
+              <p class="font-bold text-sm text-black">0878-2277-3698</p>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <i class="fa-solid fa-envelope text-primary--main"></i>
+              <p class="font-bold text-sm text-black">bramsetyo@gmail.com</p>
+            </div>
+          </div>
+          <!-- Divider -->
+          <div class="border-l border-gray-200 lg:h-16 m-4"></div>
+          <!-- Kartu Asuransi -->
+          <div>
+            <h4 class="font-bold text-black text-xs mb-2">Kartu Asuransi</h4>
+            <img src="assets/images/kartu-donasi.png" alt="" class="w-48 h-auto object-contain" />
+          </div>
+          <!-- Divider -->
+          <div class="border-l border-gray-200 lg:h-16 m-4"></div>
+          <!-- Level Donasi -->
+          <div>
+            <h4 class="font-bold text-black text-xs mb-2">Level Donasi</h4>
+            <img src="assets/images/level-donasi.png" alt="" class="w-18 object-contain" />
+            <h4 class="text-primary--soft text-xs mt-4">Poin</h4>
+            <p class="font-bold text-primary--main text-xs">1.250</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary--light">
+      <div class="max-w-7xl mx-auto pb-4 px-4">
+        <div class="bg-[#E3FFC3] rounded-xl p-4 flex flex-row items-center justify-center gap-4">
+          <img src="assets/icons/check-badge.svg" alt="" class="w-6 h-6" />
+          <p class="text-sm text-green-800">Asuransi & Plis Aktif (Hewan Peliharaan)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary--light">
+      <div class="max-w-7xl mx-auto py-4 px-4">
+        <div id="tabs" class="flex flex-row items-center gap-4 flex-wrap">
+          <button data-content-target="#detail-polis" class="bg-primary--soft rounded-lg px-4 py-2 text-primary--main text-sm cursor-pointer active">
+            Daftar Polis
+          </button>
+          <button data-content-target="#daftar-hewan" class="bg-primary--soft rounded-lg px-4 py-2 text-primary--main text-sm cursor-pointer">
+            Daftar Hewan
+          </button>
+          <button data-content-target="#riwayat-transaksi" class="bg-primary--soft rounded-lg px-4 py-2 text-primary--main text-sm cursor-pointer">
+            Riwayat Transaksi
+          </button>
+          <button data-content-target="#donasi" class="bg-primary--soft rounded-lg px-4 py-2 text-primary--main text-sm cursor-pointer">
+            Donasi
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="content-tab-wrapper" class="max-w-7xl mx-auto px-4 py-4">
+        <!-- Tab 1 : Detail Polis -->
+        <div id="detail-polis" class="hidden">
+          <h2 id="title" class="font-bold text-black text-xl mb-4">Data Asuransi</h2>
+
+          <div class="flex flex-col lg:flex-row items-start gap-8">
+            <!-- 1. Number -->
+            <div class="bg-primary--main rounded-full h-8 w-8 flex items-center justify-center text-white font-medium text-sm">1</div>
+            <!-- 2. Card -->
+            <div id="card" class="w-90">
+              <img src="assets/images/kartu-donasi.png" alt="" class="w-full object-contain" />
+              <!-- Indicator Card -->
+              <div class="flex flex-row items-center justify-between mt-4">
+                <i class="fa-solid fa-chevron-left text-gray-400"></i>
+                <div class="flex flex-row items-center gap-2">
+                  <div class="bg-primary--main rounded-full w-12 h-3"></div>
+                  <div class="bg-primary--soft rounded-full w-3 h-3"></div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-gray-400"></i>
+              </div>
+            </div>
+            <!-- 3. Form Input -->
+            <div class="flex-1 w-full space-y-4">
+              <div class="">
+                <div class="font-semibold text-primary--main">No. Polis</div>
+                <div class="block w-full bg-primary--light p-3 border-b border-primary--main outline-none">
+                  <span class="text-primary--main">30823041</span>
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold text-primary--main">Jenis Polis</div>
+                <div class="block w-full bg-primary--light p-3 border-b border-primary--main outline-none">
+                  <span class="text-primary--main">Asuransi Hewan Peliharaan</span>
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold text-primary--main">Kelas</div>
+                <div class="block w-full bg-primary--light p-3 border-b border-primary--main outline-none">
+                  <span class="text-primary--main">Classic</span>
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold text-primary--main">Manfaat</div>
+                <div class="block w-full bg-primary--light p-3 border-b border-primary--main outline-none">
+                  <ul class="text-primary--main">
+                    <li>Fasilitas Kesehatan</li>
+                    <li>Pelayanan Dokter Hewan</li>
+                    <li>Pelayanan Care</li>
+                    <li>Asuransi Kematian Hewan</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold text-primary--main">Nominal Saldo Klaim</div>
+                <div class="block w-full bg-primary--light p-3 border-b border-primary--main outline-none">
+                  <span class="text-primary--main">Rp20.000.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2 : Daftar Hewan -->
+        <div id="daftar-hewan" class="hidden relative overflow-x-auto">
+          <h2 id="title" class="font-bold text-black text-xl mb-4">Daftar Hewan</h2>
+
+          <div id="tables" class="min-w-[1025px] lg:min-w-none">
+            <!-- Tables Row item -->
+            <div class="flex flex-row items-start gap-6 py-2 border-b border-primary--soft hover:border-primary--main duration-200">
+              <div class="flex items-center justify-center w-7 h-7 rounded-full bg-primary--main text-white">1</div>
+              <div class="flex-1 flex flex-row items-start gap-4">
+                <img src="https://placehold.co/100x100.png" alt="" class="w-14 h-14 rounded-md object-cover" />
+                <div>
+                  <div class="text-xs text-primary--soft">ID-Hewan</div>
+                  <div class="mt-4 font-bold text-sm text-primary--main">123456</div>
+                </div>
+              </div>
+              <div class="flex-1">
+                <div class="text-xs text-primary--soft">Nama</div>
+                <div class="mt-4 font-bold text-sm text-primary--main">Mark</div>
+              </div>
+              <div class="flex-1">
+                <div class="text-xs text-primary--soft">Jenis</div>
+                <div class="mt-4 font-bold text-sm text-primary--main">Kucing</div>
+              </div>
+              <div class="flex-1">
+                <div class="text-xs text-primary--soft">Asuransi Aktif</div>
+                <div class="mt-4 font-bold text-sm text-primary--main">CLASSIC (Hewan Peliharaan)</div>
+              </div>
+              <a href="#" class="block px-4 bg-primary--main rounded-md py-1 text-xs text-white mt-4 hover:bg-primary--main-hover">Edit</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3 : Riwayat Transaksi -->
+        <div id="riwayat-transaksi" class="hidden">
+          <h2 id="title" class="font-bold text-black text-xl mb-4">Data Riwayat Transaksi</h2>
+
+          <div class="flex flex-row items-center gap-4">
+            <input type="checkbox" class="w-6 h-6" />
+            <div class="flex-1 relative mt-4 mb-6">
+              <span class="sr-only">Search</span>
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                <i class="fa-solid fa-search text-primary--main"></i>
+              </div>
+              <input
+                type="text"
+                id="input-group-1"
+                class="bg-primary--light border border-primary--main text-gray-900 text-sm rounded-full block w-full ps-10 p-4"
+                placeholder="Cari transaksi" />
+            </div>
+          </div>
+
+          <div class="relative overflow-x-auto">
+            <div id="table-transaction" class="min-w-[1024px]">
+              <!-- Tables Row item -->
+              <div class="flex flex-row items-center gap-4 py-2 border-b border-primary--soft hover:border-primary--main duration-200">
+                <input type="checkbox" class="w-4 h-4" />
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">12 Agustus 2023</div>
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Donasi DAS</div>
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Rp150.000</div>
+                <div class="font-medium text-sm lg:text-base text-primary--main bg-primary--soft px-4 py-2 rounded-lg">Donasi</div>
+                <div class="font-medium text-sm lg:text-base text-green-500 bg-green-100 px-4 py-2 rounded-lg">Success</div>
+                <a href="#" class="font-medium text-sm lg:text-base text-white bg-primary--main hover:bg-primary--main-hover px-4 py-2 rounded-lg"
+                  >Detail</a
+                >
+              </div>
+              <!-- Tables Row item -->
+              <div class="flex flex-row items-center gap-4 py-2 border-b border-primary--soft hover:border-primary--main duration-200">
+                <input type="checkbox" class="w-4 h-4" />
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">12 Agustus 2023</div>
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Donasi DAS</div>
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Rp150.000</div>
+                <div class="font-medium text-sm lg:text-base text-primary--main bg-primary--soft px-4 py-2 rounded-lg">Donasi</div>
+                <div class="font-medium text-sm lg:text-base text-green-500 bg-green-100 px-4 py-2 rounded-lg">Success</div>
+                <a href="#" class="font-medium text-sm lg:text-base text-white bg-primary--main hover:bg-primary--main-hover px-4 py-2 rounded-lg"
+                  >Detail</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4 : Donasi -->
+        <div id="donasi" class="">
+          <div class="bg-primary--main p-6">
+            <h2 id="title" class="font-bold text-white text-xl mb-4 text-center">Donasi</h2>
+            <div class="flex items-end justify-center gap-12 mt-8">
+              <!-- Rank Donation Item -->
+              <div class="relative flex flex-col items-center justify-center opacity-100">
+                <img src="assets/ilustration/donasi-1-basic.png" alt="basic-donation" class="w-24 h-24 z-20" />
+                <h6 class="font-semibold text-white text-lg text-center">Basic</h6>
+              </div>
+              <!-- Rank Donation Item -->
+              <div class="relative flex flex-col items-center justify-center opacity-100">
+                <img src="assets/ilustration/donasi-2-silver.png" alt="basic-donation" class="w-24 h-24 scale-120 mb-2" />
+                <h6 class="font-semibold text-white text-lg text-center">Silver</h6>
+                <img src="assets/ilustration/donasi-light-active.png" alt="light" class="w-24 h-24 absolute bottom-0 left-0 opacity-50" />
+              </div>
+              <!-- Rank Donation Item -->
+              <div class="relative flex flex-col items-center justify-center opacity-50">
+                <img src="assets/ilustration/donasi-3-gold.png" alt="basic-donation" class="w-24 h-24" />
+                <h6 class="font-semibold text-white text-lg text-center">Gold</h6>
+              </div>
+              <!-- Rank Donation Item -->
+              <div class="relative flex flex-col items-center justify-center opacity-50">
+                <img src="assets/ilustration/donasi-4-platinum.png" alt="basic-donation" class="w-24 h-24" />
+                <h6 class="font-semibold text-white text-lg text-center">Platinum</h6>
+              </div>
+              <!-- Rank Donation Item -->
+              <div class="relative flex flex-col items-center justify-center opacity-50">
+                <img src="assets/ilustration/donasi-5-diamond.png" alt="basic-donation" class="w-24 h-24" />
+                <h6 class="font-semibold text-white text-lg text-center">Diamond</h6>
+              </div>
+              <!-- Rank Donation Item -->
+              <div class="relative flex flex-col items-center justify-center opacity-50">
+                <img src="assets/ilustration/donasi-6-crown.png" alt="basic-donation" class="w-24 h-24" />
+                <h6 class="font-semibold text-white text-lg text-center">Crown</h6>
+              </div>
+            </div>
+
+            <div class="flex flex-row items-center justify-between mt-12 mx-32">
+              <h5 class="text-white text-lg"><span class="font-bold">Poin</span> Donasi</h5>
+              <div class="font-bold text-white text-2xl">1250</div>
+            </div>
+
+            <div class="relative mx-32 mt-8">
+              <div class="flex items-center justify-center">
+                <div class="absolute top-1.5 w-[calc(100%-24px)] rounded-full h-2 bg-primary--soft/50 z-2 overflow-hidden">
+                  <div class="w-[20%] bg-white h-full"></div>
+                </div>
+              </div>
+
+              <div class="relative flex items-center justify-between z-4">
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Basic</div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div class="w-5 h-5 rounded-full bg-white scale-150"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Silver</div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div class="w-5 h-5 rounded-full bg-primary--soft"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Gold</div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div class="w-5 h-5 rounded-full bg-primary--soft"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Platinum</div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div class="w-5 h-5 rounded-full bg-primary--soft"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Diamond</div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <div class="w-5 h-5 rounded-full bg-primary--soft"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Crown</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto mt-12">
+              <div class="bg-primary--dark/50 rounded-xl flex flex-row items-center p-8 rounded-t-xl">
+                <div class="flex-1">
+                  <h5 class="font-bold text-xl text-white">3.750</h5>
+                  <p class="text-white text-xs mt-2">poin lagi untuk naik ke <br /><span class="font-bold">Donatur Gold</span></p>
+                </div>
+                <div class="h-full w-1 bg-white"></div>
+                <div class="flex-1">
+                  <div class="text-white text-xs">Level selanjutnya</div>
+                  <div class="flex flex-row items-center gap-4 mt-2">
+                    <img src="assets/ilustration/donais-3-gold-color.png" alt="" class="w-14 h-14" />
+                    <div class="font-bold text-white">
+                      <div>Gold</div>
+                      <div>5.000 Poin</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Belum ada donasi saat ini -->
+            <p class="text-gray-500">Anda belum melakukan donasi apapun.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary--main">
+      <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div>
+            <img src="assets/logo/brand.webp" alt="YASINDO Logo" class="h-15 object-contain" />
+            <p class="text-white text-sm mt-4">
+              YASINDO adalah platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia, menyediakan perlindungan komprehensif untuk
+              kesehatan dan kesejahteraan hewan Anda.
+            </p>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Compoany</h6>
+            <ul class="mt-4 *:mt-2">
+              <li><a href="#" class="text-white hover:text-white/80">Produk</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Partnership</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Tentang Kita</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Tearms</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Subscribe</h6>
+            <div class="mt-4">
+              <p class="text-white/50">Subscribe to stay tuned for new web design and latest updates. Let's do it!</p>
+              <div class="flex flex-col items-start gap-4 mt-4">
+                <input class="bg-white w-[90%] rounded-lg h-9" />
+                <button class="bg-primary--dark text-white text-sm rounded-lg px-6 py-2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Sosial Media</h6>
+            <ul class="mt-4 *:mt-2">
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-facebook-f"></i> Facbook</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-x"></i> X</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-200 mt-8 pt-6 text-center">
+          <p class="text-sm text-white/70">&copy; 2025 YASINDO. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Tabs
+      const tabs = document.querySelectorAll("#tabs button");
+      const contents = document.querySelectorAll("#content-tab-wrapper > div");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active class from all tabs
+          tabs.forEach((t) => t.classList.remove("active"));
+          // Add active class to the clicked tab
+          tab.classList.add("active");
+
+          // Hide all content
+          contents.forEach((content) => content.classList.add("hidden"));
+          // Show the content corresponding to the clicked tab
+          const target = document.querySelector(tab.getAttribute("data-content-target"));
+          if (target) {
+            target.classList.remove("hidden");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

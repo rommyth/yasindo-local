@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAS | Yasindo | Asuransi Satwa Indonesia</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png" />
+
+    <meta
+      name="description"
+      content="YASINDO adalah platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia. Lindungi kesehatan dan kesejahteraan hewan Anda dengan solusi asuransi cerdas, premi fleksibel, dan layanan klaim mudah." />
+    <meta
+      name="keywords"
+      content="asuransi hewan, asuransi ternak, asuransi kucing, asuransi anjing, perlindungan hewan, YASINDO, asuransi Indonesia, klaim asuransi hewan, premi asuransi hewan, dana abadi satwa" />
+    <meta name="author" content="YASINDO" />
+    <meta property="og:title" content="YASINDO | Asuransi Satwa Indonesia" />
+    <meta
+      property="og:description"
+      content="Platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia. Perlindungan komprehensif, premi fleksibel, dan layanan terbaik untuk hewan Anda." />
+    <meta property="og:image" content="assets/logo/brand.webp" />
+    <meta property="og:url" content="https://yasindo.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YASINDO | Asuransi Satwa Indonesia" />
+    <meta name="twitter:description" content="Lindungi hewan peliharaan dan ternak Anda dengan asuransi terbaik dari YASINDO." />
+    <meta name="twitter:image" content="assets/logo/brand.webp" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary--soft: #cfb8e6;
+        --color-primary--main: #5f358b;
+        --color-primary--dark: #2a074e;
+        --color-primary--main-hover: #6b4297;
+        --color-primary--light: #f7f0ff;
+        --color-secondary--main: #d1444a;
+        --color-secondary--main-hover: #d45c62;
+        --color-secondary--light: #ffe9ea;
+      }
+
+      .active {
+        @apply text-primary--main border-b-3 border-b-primary--main;
+      }
+    </style>
+
+    <!-- SwiperJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Fontawesome v7 icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="bg-white sticky w-full z-99 top-0 start-0 border-b border-gray-200">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/logo/brand.webp" class="h-12 md:h-16" alt="Flowbite Logo" />
+        </a>
+        <div class="flex md:order-2 space-x-1">
+          <a href="#" class="hidden md:block font-semibold block px-4 py-2 text-black rounded-sm" aria-current="page">Kontak</a>
+
+          <!-- Pre login -->
+          <div class="hidden">
+            <button
+              type="button"
+              class="text-primary--main hover:text-primary--main bg-primary--light hover:bg-primary--soft font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Masuk
+            </button>
+            <button type="button" class="text-white bg-primary--main hover:bg-purple-800 font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Daftar
+            </button>
+          </div>
+
+          <!-- Logged in -->
+          <div>
+            <a href="my-profile.html" class="flex flex-row items-center gap-2">
+              <img src="https://placehold.co/200x200.png" class="w-10 h-10 rounded-full border border-gray-200" />
+              <i class="fa-solid fa-chevron-down text-xs"></i>
+            </a>
+          </div>
+
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between w-full hidden md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main active"
+                aria-current="page"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="partnership.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Partnership</a
+              >
+            </li>
+            <li>
+              <a
+                href="about-us.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Tentang Kita</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative" style="background-image: url('assets/images/bg-das.webp'); background-size: cover; background-position: center">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-primary--dark/60"></div>
+      <div class="relative z-30 max-w-7xl mx-auto px-4 py-72">
+        <h1 class="text-4xl md:text-6xl font-bold text-white text-center">Dana Abadi Satwa</h1>
+        <h2 class="text-3xl md:text-5xl font-bold text-white text-center mt-4">Kebaikan untuk semua satwa</h2>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-24 px-4">
+        <h2 class="font-bold text-4xl text-black text-center">Tentang DAS</h2>
+        <p class="mt-6 text-black text-center text-lg">
+          Program pengumpulan dana dari para donatur YASINDO yang bertujuan mendukung perlindungan, perawatan, dan kesejahteraan hewan di Indonesia.
+          Dana ini dikelola secara berkelanjutan untuk memastikan setiap hewan — baik peliharaan, liar, maupun ternak — mendapatkan akses terhadap
+          kehidupan yang sehat, aman, dan layak.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-24 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-primary--light rounded-xl p-6">
+            <img src="assets/ilustration/das-visi.png" alt="Visi DAS" class="w-24 h-24 object-contain" />
+            <h2 class="font-bold text-3xl text-primary--main mt-4">Visi</h2>
+            <p class="mt-4 text-primary--main text-lg">
+              Mewujudkan masa depan di mana setiap hewan di Indonesia hidup dengan sehat, aman, dan sejahtera melalui dukungan berkelanjutan dari
+              masyarakat yang peduli.
+            </p>
+          </div>
+          <div class="bg-primary--light rounded-xl p-6">
+            <img src="assets/ilustration/das-misi.png" alt="Misi DAS" class="w-24 h-24 object-contain" />
+            <h2 class="font-bold text-3xl text-primary--main mt-4">Misi</h2>
+            <!-- ul list number -->
+            <ol class="px-4 list-decimal mt-4 text-primary--main text-lg space-y-5">
+              <li>
+                <b>Menggalang dan mengelola dana secara transparan dan berkelanjutan</b> untuk mendukung program kesejahteraan, perawatan, dan
+                perlindungan hewan di seluruh Indonesia
+              </li>
+              <li>
+                <b>Memberikan bantuan nyata kepada shelter, komunitas, dan individu penyelamat hewan</b> agar mereka dapat terus menjalankan peran
+                sosialnya dengan lebih optimal.
+              </li>
+              <li>
+                <b>Meningkatkan kesadaran dan edukasi publik</b> tentang pentingnya kesejahteraan hewan dan tanggung jawab dalam memelihara serta
+                melindungi satwa.
+              </li>
+              <li><b>Mendukung layanan kesehatan dan asuransi hewan</b> agar lebih mudah diakses oleh masyarakat dari berbagai kalangan</li>
+              <li>
+                <b>Membangun ekosistem kolaboratif</b> antara organisasi, dan masyarakat untuk menciptakan lingkungan yang ramah dan berkelanjutan
+                bagi satwa.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-image: url('assets/images/bg-purple-curly.webp'); background-size: cover; background-position: center">
+      <div class="max-w-7xl mx-auto py-24 px-4">
+        <h2 class="font-bold text-4xl text-white text-center">Program</h2>
+        <p class="font-medium text-base text-white text-center mt-2">
+          Kami memiliki 3 program unggulan untuk menunjang seluruh ekosistem dan pemberdayaan keberlangsungan satwa di Indonesia.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-12">
+          <div class="bg-primary--light rounded-3xl overflow-hidden">
+            <img src="assets/images/program-1.webp" alt="" class="w-full aspect-[4/3] object-cover" />
+            <div class="p-8">
+              <h6 class="font-bold text-primary--main text-xl">Beasiswa Pendidikan Calon Doket Hewan / Talent</h6>
+              <p class="text-sm mt-4">
+                Program ini bertujuan mendukung generasi muda yang berkomitmen terhadap kesejahteraan hewan. Melalui beasiswa pendidikan dan
+                pengembangan talent, YASINDO membantu mencetak dokter hewan serta tenaga profesional yang kompeten, berempati, dan berdedikasi tinggi
+                terhadap dunia satwa.
+              </p>
+            </div>
+          </div>
+          <div class="bg-primary--light rounded-3xl overflow-hidden">
+            <img src="assets/images/program-2.webp" alt="" class="w-full aspect-[4/3] object-cover" />
+            <div class="p-8">
+              <h6 class="font-bold text-primary--main text-xl">Pembinaan Shelter & Mobil Keliling Satwa</h6>
+              <p class="text-sm mt-4">
+                YASINDO menghadirkan program pembinaan untuk shelter-shelter hewan di seluruh Indonesia. Melalui mobil keliling yang dilengkapi tenaga
+                perawat, obat-obatan, dan perlengkapan medis, kami memberikan bantuan langsung untuk meningkatkan kualitas perawatan dan kesehatan
+                hewan di penampungan.
+              </p>
+            </div>
+          </div>
+          <div class="bg-primary--light rounded-3xl overflow-hidden">
+            <img src="assets/images/program-3.webp" alt="" class="w-full aspect-[4/3] object-cover" />
+            <div class="p-8">
+              <h6 class="font-bold text-primary--main text-xl">Kerja Sama dengan Klinik Hewan</h6>
+              <p class="text-sm mt-4">
+                Dalam upaya menciptakan ekosistem satwa yang sejahtera, YASINDO menjalin kemitraan strategis dengan berbagai klinik hewan. Program ini
+                memastikan hewan peliharaan dan ternak mendapatkan layanan kesehatan terbaik dengan standar yang aman, terjangkau, dan berkelanjutan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-24 px-4">
+        <h2 class="font-bold text-4xl text-black text-center">Galeri Kegiatan</h2>
+        <div class="mt-12">
+          <div class="swiper" id="list-galery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/galery-1.png" alt="Galeri 1" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/galery-2.png" alt="Galeri 2" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/galery-3.png" alt="Galeri 3" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/galery-1.png" alt="Galeri 4" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/galery-2.png" alt="Galeri 5" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/galery-3.png" alt="Galeri 6" class="w-full h-64 object-cover rounded-lg" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination !relative !mt-5"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev !top-[calc(50%-1.2rem)]"></div>
+            <div class="swiper-button-next !top-[calc(50%-1.2rem)]"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-12 px-4">
+        <h2 class="font-bold text-4xl text-black text-center">Top Kontributor</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="bg-primary--light p-4 rounded-xl">
+            <div class="relative flex flex-row items-start gap-4">
+              <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+              <div>
+                <div class="inline-block bg-violet-200 text-violet-700 rounded-md px-2 py-1 text-xs font-semibold">Platinum</div>
+                <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+              </div>
+              <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+            </div>
+            <p class="italic text-sm mt-4 text-primary--main font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+            </p>
+          </div>
+          <div class="bg-primary--light p-4 rounded-xl">
+            <div class="relative flex flex-row items-start gap-4">
+              <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+              <div>
+                <div class="inline-block bg-violet-200 text-violet-700 rounded-md px-2 py-1 text-xs font-semibold">Platinum</div>
+                <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+              </div>
+              <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+            </div>
+            <p class="italic text-sm mt-4 text-primary--main font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+            </p>
+          </div>
+          <div class="bg-primary--light p-4 rounded-xl">
+            <div class="relative flex flex-row items-start gap-4">
+              <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+              <div>
+                <div class="inline-block bg-violet-200 text-violet-700 rounded-md px-2 py-1 text-xs font-semibold">Platinum</div>
+                <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+              </div>
+              <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+            </div>
+            <p class="italic text-sm mt-4 text-primary--main font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+            </p>
+          </div>
+          <div class="bg-primary--light p-4 rounded-xl">
+            <div class="relative flex flex-row items-start gap-4">
+              <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+              <div>
+                <div class="inline-block bg-violet-200 text-violet-700 rounded-md px-2 py-1 text-xs font-semibold">Platinum</div>
+                <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+              </div>
+              <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+            </div>
+            <p class="italic text-sm mt-4 text-primary--main font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+            </p>
+          </div>
+          <div class="bg-primary--light p-4 rounded-xl">
+            <div class="relative flex flex-row items-start gap-4">
+              <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+              <div>
+                <div class="inline-block bg-violet-200 text-violet-700 rounded-md px-2 py-1 text-xs font-semibold">Platinum</div>
+                <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+              </div>
+              <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+            </div>
+            <p class="italic text-sm mt-4 text-primary--main font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+            </p>
+          </div>
+          <div class="bg-primary--light p-4 rounded-xl">
+            <div class="relative flex flex-row items-start gap-4">
+              <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+              <div>
+                <div class="inline-block bg-violet-200 text-violet-700 rounded-md px-2 py-1 text-xs font-semibold">Platinum</div>
+                <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+              </div>
+              <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+            </div>
+            <p class="italic text-sm mt-4 text-primary--main font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+            </p>
+          </div>
+          <div class="bg-primary--light p-4 rounded-xl">
+            <div class="relative flex flex-row items-start gap-4">
+              <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+              <div>
+                <div class="inline-block bg-violet-200 text-violet-700 rounded-md px-2 py-1 text-xs font-semibold">Platinum</div>
+                <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+              </div>
+              <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+            </div>
+            <p class="italic text-sm mt-4 text-primary--main font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+            </p>
+          </div>
+          <div class="bg-primary--light p-4 rounded-xl">
+            <div class="relative flex flex-row items-start gap-4">
+              <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+              <div>
+                <div class="inline-block bg-violet-200 text-violet-700 rounded-md px-2 py-1 text-xs font-semibold">Platinum</div>
+                <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+              </div>
+              <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+            </div>
+            <p class="italic text-sm mt-4 text-primary--main font-semibold">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-12 px-4">
+        <h2 class="font-bold text-4xl text-black text-center">Kontributor Saat Ini</h2>
+        <div class="mt-6">
+          <div class="swiper" id="list-current-kontributor">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg-neutral-100 p-4 rounded-xl">
+                  <div class="relative flex flex-row items-start gap-4">
+                    <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+                    <div>
+                      <div class="inline-block bg-yellow-200 text-yellow-600 rounded-md px-2 py-1 text-xs font-semibold">Gold</div>
+                      <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                      <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+                      <p class="text-[9pt] text-gray-400 mt-1">30 menit yang lalu</p>
+                    </div>
+                    <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+                  </div>
+                  <p class="italic text-sm mt-4 text-black font-semibold">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-neutral-100 p-4 rounded-xl">
+                  <div class="relative flex flex-row items-start gap-4">
+                    <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+                    <div>
+                      <div class="inline-block bg-yellow-200 text-yellow-600 rounded-md px-2 py-1 text-xs font-semibold">Gold</div>
+                      <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                      <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+                      <p class="text-[9pt] text-gray-400 mt-1">30 menit yang lalu</p>
+                    </div>
+                    <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+                  </div>
+                  <p class="italic text-sm mt-4 text-black font-semibold">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-neutral-100 p-4 rounded-xl">
+                  <div class="relative flex flex-row items-start gap-4">
+                    <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+                    <div>
+                      <div class="inline-block bg-yellow-200 text-yellow-600 rounded-md px-2 py-1 text-xs font-semibold">Gold</div>
+                      <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                      <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+                      <p class="text-[9pt] text-gray-400 mt-1">30 menit yang lalu</p>
+                    </div>
+                    <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+                  </div>
+                  <p class="italic text-sm mt-4 text-black font-semibold">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-neutral-100 p-4 rounded-xl">
+                  <div class="relative flex flex-row items-start gap-4">
+                    <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+                    <div>
+                      <div class="inline-block bg-yellow-200 text-yellow-600 rounded-md px-2 py-1 text-xs font-semibold">Gold</div>
+                      <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                      <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+                      <p class="text-[9pt] text-gray-400 mt-1">30 menit yang lalu</p>
+                    </div>
+                    <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+                  </div>
+                  <p class="italic text-sm mt-4 text-black font-semibold">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-neutral-100 p-4 rounded-xl">
+                  <div class="relative flex flex-row items-start gap-4">
+                    <img src="https://placehold.co/50x50.png" alt="" class="w-12 h-12 rounded-full bg-primary--soft" />
+                    <div>
+                      <div class="inline-block bg-yellow-200 text-yellow-600 rounded-md px-2 py-1 text-xs font-semibold">Gold</div>
+                      <h6 class="font-bold text-base text-black">Sila Azara</h6>
+                      <p class="text-xs text-black">Berdonasi sebesar <b>Rp10.000.000</b></p>
+                      <p class="text-[9pt] text-gray-400 mt-1">30 menit yang lalu</p>
+                    </div>
+                    <i class="fa-solid fa-quote-left opacity-20 text-4xl absolute -bottom-4 -left-2"></i>
+                  </div>
+                  <p class="italic text-sm mt-4 text-black font-semibold">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium animi harum qweuia,
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontribusi" class="bg-white">
+      <div class="max-w-5xl mx-auto py-12 px-4">
+        <h2 class="font-bold text-4xl text-black text-center">Ikut Kontribusi Sekarang!</h2>
+        <p class="font-medium text-base text-gray-500 text-center mt-2">Jadilah kontributor untuk sama-sama menwujudkan visi dan misi ino.</p>
+        <div class="mt-6 bg-primary--light rounded-xl p-6">
+          <h6 class="font-bold text-2xl text-black">Pilih Nominal</h6>
+          <ul class="flex flex-row items-center gap-4 mt-4 *:mt-4 flex-wrap">
+            <li>
+              <input type="radio" id="nominal-5000" name="nominal" value="5000" class="hidden peer" required />
+              <label
+                for="nominal-5000"
+                class="bg-primary--soft cursor-pointer rounded-md px-6 py-3 text-primary--main font-semibold peer-checked:bg-primary--main peer-checked:text-white">
+                Rp5.000
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="nominal-25000" name="nominal" value="25000" class="hidden peer" required />
+              <label
+                for="nominal-25000"
+                class="bg-primary--soft cursor-pointer rounded-md px-6 py-3 text-primary--main font-semibold peer-checked:bg-primary--main peer-checked:text-white">
+                Rp25.000
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="nominal-50000" name="nominal" value="50000" class="hidden peer" required />
+              <label
+                for="nominal-50000"
+                class="bg-primary--soft cursor-pointer rounded-md px-6 py-3 text-primary--main font-semibold peer-checked:bg-primary--main peer-checked:text-white">
+                Rp50.000
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="nominal-100000" name="nominal" value="100000" class="hidden peer" required />
+              <label
+                for="nominal-100000"
+                class="bg-primary--soft cursor-pointer rounded-md px-6 py-3 text-primary--main font-semibold peer-checked:bg-primary--main peer-checked:text-white">
+                Rp100.000
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="nominal-150000" name="nominal" value="150000" class="hidden peer" required />
+              <label
+                for="nominal-150000"
+                class="bg-primary--soft cursor-pointer rounded-md px-6 py-3 text-primary--main font-semibold peer-checked:bg-primary--main peer-checked:text-white">
+                Rp5.000
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="nominal-250000" name="nominal" value="250000" class="hidden peer" required />
+              <label
+                for="nominal-250000"
+                class="bg-primary--soft cursor-pointer rounded-md px-6 py-3 text-primary--main font-semibold peer-checked:bg-primary--main peer-checked:text-white">
+                Rp250.000
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="nominal-500000" name="nominal" value="500000" class="hidden peer" required />
+              <label
+                for="nominal-500000"
+                class="bg-primary--soft cursor-pointer rounded-md px-6 py-3 text-primary--main font-semibold peer-checked:bg-primary--main peer-checked:text-white">
+                Rp500.000
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="nominal-1000000" name="nominal" value="1000000" class="hidden peer" required />
+              <label
+                for="nominal-1000000"
+                class="bg-primary--soft cursor-pointer rounded-md px-6 py-3 text-primary--main font-semibold peer-checked:bg-primary--main peer-checked:text-white">
+                Rp1.000.000
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="nominal-5000000" name="nominal" value="5000000" class="hidden peer" required />
+              <label
+                for="nominal-5000000"
+                class="bg-primary--soft cursor-pointer rounded-md px-6 py-3 text-primary--main font-semibold peer-checked:bg-primary--main peer-checked:text-white">
+                Rp5.000.000
+              </label>
+            </li>
+          </ul>
+
+          <h6 class="font-bold text-2xl text-black mt-8">Masukan Nominal</h6>
+          <div class="relative mt-1">
+            <div class="absolute inset-y-0 left-0 m-2 px-3 bg-primary--main text-white rounded-md flex items-center justify-center">Rp</div>
+            <input type="text" class="pl-16 pr-4 py-4 bg-white border border-gray-300 rounded-lg w-full" placeholder="Masukkan nominal" />
+          </div>
+          <button class="bg-primary--main hover:bg-primary--main-hover text-white font-semibold rounded-lg px-6 py-3 mt-6 w-full cursor-pointer">
+            Kontribusi Sekarang
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="font-bold text-4xl text-black text-center"><span class="text-primary--main">YASINDO</span> Siap Membantumu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-12 gap-4">
+          <div class="flex flex-row items-center gap-4 bg-primary--light rounded-xl p-6">
+            <img src="assets/icons/mail.svg" alt="" class="h-12 object-contain" />
+            <div>
+              <h4 class="font-bold text-black text-lg">Email</h4>
+              <a href="mailto:cs@yasindo.com" class="text-primary--main">cs@yasindo.com</a>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4 bg-secondary--light rounded-xl p-6">
+            <img src="assets/icons/phone.svg" alt="" class="h-12 object-contain" />
+            <div>
+              <h4 class="font-bold text-black text-lg">Nomor Telepon</h4>
+              <a href="tel:02259313592" class="text-secondary--main">(022) 5931-3592</a>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-4 bg-yellow-50 rounded-xl p-6">
+            <img src="assets/icons/whatsapp.svg" alt="" class="h-12 object-contain" />
+            <div>
+              <h4 class="font-bold text-black text-lg">Layanan & Bantuan</h4>
+              <a href="https://wa.me/6287822773698" class="text-yellow-600">+62 878-2277-3698</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#kontribusi" class="block fixed bottom-12 right-12 z-50">
+      <div class="group bg-primary--main hover:bg-primary--main-hover rounded-full flex flex-row items-center gap-2 p-4 shadow-xl">
+        <i class="fa-solid fa-cat text-white group-hover:animate-bounce"></i>
+        <p class="text-white font-semibold">Ikut Kontribusi</p>
+      </div>
+    </a>
+
+    <footer class="bg-primary--main">
+      <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div>
+            <img src="assets/logo/brand.webp" alt="YASINDO Logo" class="h-15 object-contain" />
+            <p class="text-white text-sm mt-4">
+              YASINDO adalah platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia, menyediakan perlindungan komprehensif untuk
+              kesehatan dan kesejahteraan hewan Anda.
+            </p>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Compoany</h6>
+            <ul class="mt-4 *:mt-2">
+              <li>
+                <a href="#" class="text-white hover:text-white/80">Produk</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80">Partnership</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80">Tentang Kita</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80">Tearms</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Subscribe</h6>
+            <div class="mt-4">
+              <p class="text-white/50">Subscribe to stay tuned for new web design and latest updates. Let's do it!</p>
+              <div class="flex flex-col items-start gap-4 mt-4">
+                <input class="bg-white w-[90%] rounded-lg h-9" />
+                <button class="bg-primary--dark text-white text-sm rounded-lg px-6 py-2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Sosial Media</h6>
+            <ul class="mt-4 *:mt-2">
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-facebook-f"></i> Facbook</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-x"></i> X</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-200 mt-8 pt-6 text-center">
+          <p class="text-sm text-white/70">&copy; 2025 YASINDO. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const config = {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 24,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      };
+      const swiperGalery = new Swiper("#list-galery", config);
+      const swiperKontributor = new Swiper("#list-kontributor", {
+        ...config,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        freeMode: {
+          enabled: true,
+          momentum: true,
+        },
+      });
+      const swiperCurrentKontributor = new Swiper("#list-current-kontributor", {
+        ...config,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        freeMode: {
+          enabled: true,
+          momentum: true,
+        },
+      });
+    </script>
+  </body>
+</html>

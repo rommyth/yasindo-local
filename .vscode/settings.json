@@ -1,0 +1,4 @@
+{
+  "prettier.singleAttributePerLine": false,
+  "editor.minimap.maxColumn": 240
+}
