@@ -323,75 +323,45 @@
           <div class="bg-primary--main p-6 pb-48 rounded-2xl rounded-b-[100px]">
             <h2 id="title" class="font-bold text-white text-3xl mb-2 text-center">Donasi</h2>
             <p class="text-sm text-white text-center mb-4">Seluruh Data Donasi Anda tercatat dengan baik dan transparan</p>
-            <div class="flex items-end justify-center gap-12 mt-8">
+            <div id="rank-wrapper" class="flex items-end justify-center gap-12 mt-8">
               <!-- Rank Donation Item -->
-              <div class="relative flex flex-col items-center justify-center opacity-100">
-                <img src="assets/ilustration/donasi-1-basic.png" alt="basic-donation" class="w-24 h-24 z-20" />
-                <h6 class="font-semibold text-white text-lg text-center">Basic</h6>
-              </div>
-              <!-- Rank Donation Item -->
-              <div class="relative flex flex-col items-center justify-center opacity-100">
-                <img src="assets/ilustration/donasi-2-silver.png" alt="basic-donation" class="w-24 h-24 scale-120 mb-2" />
-                <h6 class="font-semibold text-white text-lg text-center">Silver</h6>
-                <img src="assets/ilustration/donasi-light-active.png" alt="light" class="w-24 h-24 absolute bottom-0 left-0 opacity-50" />
-              </div>
-              <!-- Rank Donation Item -->
-              <div class="relative flex flex-col items-center justify-center opacity-50">
-                <img src="assets/ilustration/donasi-3-gold.png" alt="basic-donation" class="w-24 h-24" />
-                <h6 class="font-semibold text-white text-lg text-center">Gold</h6>
-              </div>
-              <!-- Rank Donation Item -->
-              <div class="relative flex flex-col items-center justify-center opacity-50">
-                <img src="assets/ilustration/donasi-4-platinum.png" alt="basic-donation" class="w-24 h-24" />
-                <h6 class="font-semibold text-white text-lg text-center">Platinum</h6>
-              </div>
-              <!-- Rank Donation Item -->
-              <div class="relative flex flex-col items-center justify-center opacity-50">
-                <img src="assets/ilustration/donasi-5-diamond.png" alt="basic-donation" class="w-24 h-24" />
-                <h6 class="font-semibold text-white text-lg text-center">Diamond</h6>
-              </div>
-              <!-- Rank Donation Item -->
-              <div class="relative flex flex-col items-center justify-center opacity-50">
-                <img src="assets/ilustration/donasi-6-crown.png" alt="basic-donation" class="w-24 h-24" />
-                <h6 class="font-semibold text-white text-lg text-center">Crown</h6>
-              </div>
             </div>
 
             <div class="flex flex-row items-center justify-between mt-12 mx-32">
               <h5 class="text-white text-lg"><span class="font-bold">Poin</span> Donasi</h5>
-              <div class="font-bold text-white text-2xl">1250</div>
+              <div id="mypoint" class="font-bold text-white text-2xl">1250</div>
             </div>
 
             <div class="relative mx-32 mt-8">
               <div class="flex items-center justify-center">
-                <div class="absolute top-1.5 w-[calc(100%-24px)] rounded-full h-2 bg-primary--soft/50 z-2 overflow-hidden">
-                  <div class="w-[20%] bg-white h-full"></div>
+                <div class="absolute top-1.5 w-[calc(100%-52px)] h-2 bg-primary--soft/50 z-2 overflow-hidden">
+                  <div id="progress-bar" class="bg-white h-full"></div>
                 </div>
               </div>
 
               <div class="relative flex items-center justify-between z-4">
-                <div class="flex flex-col items-center justify-center gap-1">
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
                   <div class="w-5 h-5 rounded-full bg-white"></div>
                   <div class="font-semibold text-white text-xs opacity-50">Basic</div>
                 </div>
-                <div class="flex flex-col items-center justify-center gap-1">
-                  <div class="w-5 h-5 rounded-full bg-white scale-150"></div>
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
                   <div class="font-semibold text-white text-xs opacity-50">Silver</div>
                 </div>
-                <div class="flex flex-col items-center justify-center gap-1">
-                  <div class="w-5 h-5 rounded-full bg-primary--soft"></div>
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
                   <div class="font-semibold text-white text-xs opacity-50">Gold</div>
                 </div>
-                <div class="flex flex-col items-center justify-center gap-1">
-                  <div class="w-5 h-5 rounded-full bg-primary--soft"></div>
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
                   <div class="font-semibold text-white text-xs opacity-50">Platinum</div>
                 </div>
-                <div class="flex flex-col items-center justify-center gap-1">
-                  <div class="w-5 h-5 rounded-full bg-primary--soft"></div>
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
                   <div class="font-semibold text-white text-xs opacity-50">Diamond</div>
                 </div>
-                <div class="flex flex-col items-center justify-center gap-1">
-                  <div class="w-5 h-5 rounded-full bg-primary--soft"></div>
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
                   <div class="font-semibold text-white text-xs opacity-50">Crown</div>
                 </div>
               </div>
@@ -400,23 +370,25 @@
             <div class="max-w-xl mx-auto mt-12">
               <div class="bg-primary--dark/50 rounded-t-xl flex flex-row items-center p-8 gap-6">
                 <div class="flex-1">
-                  <h5 class="font-bold text-2xl text-white">3.750</h5>
-                  <p class="text-white text-xs mt-2">poin lagi untuk naik ke <br /><span class="font-bold">Donatur Gold</span></p>
+                  <h5 id="need-more-point" class="font-bold text-2xl text-white">3.750</h5>
+                  <p class="text-white text-xs mt-2">
+                    poin lagi untuk naik ke <br /><span id="donatur-rank-name" class="font-bold">Donatur Gold</span>
+                  </p>
                 </div>
                 <div class="h-20 w-[1px] bg-white/50"></div>
                 <div class="flex-1">
                   <div class="text-white text-xs">Level selanjutnya</div>
                   <div class="flex flex-row items-center gap-4 mt-2">
-                    <img src="assets/ilustration/donais-3-gold-color.png" alt="" class="w-14 h-14" />
+                    <img id="next-level-img" src="assets/ilustration/donais-3-gold-color.png" alt="" class="w-14 h-14" />
                     <div class="font-bold text-white">
-                      <div>Gold</div>
-                      <div class="text-2xl">5.000 Poin</div>
+                      <div id="next-level-name">Gold</div>
+                      <div id="next-level-point" class="text-2xl">5.000 Poin</div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="bg-white/10 rounded-b-xl p-8 text-sm text-white">
-                <h5>Mantap, sekarang kamu jadi Donatur Silver! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!</h5>
+                <h5 id="rank-greeting">Mantap, sekarang kamu jadi Donatur Silver! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!</h5>
               </div>
             </div>
           </div>
@@ -566,6 +538,7 @@
       </div>
     </footer>
 
+    <!-- Tab -->
     <script>
       // Tabs
       const tabs = document.querySelectorAll("#tabs div");
@@ -588,5 +561,118 @@
         });
       });
     </script>
+
+    <script>
+      const mypoint = 5000;
+      const highestPoint = 30000; // a.k Crown
+      const dataRank = [
+        {
+          key: "basic",
+          name: "Basic",
+          point: 500,
+          img: "assets/ilustration/donasi-1-basic.png",
+          imgColor: "assets/ilustration/donasi-1-basic-color.png",
+          greeting: "Mantap, sekarang kamu jadi Donatur Basic! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Basic",
+        },
+        {
+          key: "silver",
+          name: "Silver",
+          point: 1250,
+          img: "assets/ilustration/donasi-2-silver.png",
+          imgColor: "assets/ilustration/donasi-2-silver-color.png",
+          greeting: "Mantap, sekarang kamu jadi Donatur Silver! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Silver",
+        },
+        {
+          key: "gold",
+          name: "Gold",
+          img: "assets/ilustration/donasi-3-gold.png",
+          point: 5000,
+          imgColor: "assets/ilustration/donasi-3-gold-color.png",
+          greeting: "Mantap, sekarang kamu jadi Donatur Gold! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Gold",
+        },
+        {
+          key: "platinum",
+          name: "Platinum",
+          img: "assets/ilustration/donasi-4-platinum.png",
+          point: 10000,
+          imgColor: "assets/ilustration/donasi-4-platinum-color.png",
+          greeting: "Mantap, sekarang kamu jadi Donatur Platinum! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Platinum",
+        },
+        {
+          key: "diamond",
+          name: "Diamond",
+          img: "assets/ilustration/donasi-5-diamond.png",
+          point: 17500,
+          imgColor: "assets/ilustration/donasi-5-diamond-color.png",
+          greeting: "Mantap, sekarang kamu jadi Donatur Diamond! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Diamond",
+        },
+        {
+          key: "crown",
+          name: "Crown",
+          img: "assets/ilustration/donasi-6-crown.png",
+          point: 30000,
+          imgColor: "assets/ilustration/donasi-6-crown-color.png",
+          greeting: "Mantap, sekarang kamu jadi Donatur Crown! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Crown",
+        },
+      ];
+
+      const containerWrapper = document.getElementById("rank-wrapper");
+      let itemHtml = "";
+      const activeIndex = dataRank.findLastIndex((m) => mypoint >= m.point);
+      dataRank.forEach((rank, index) => {
+        let status = "";
+        if (index < activeIndex) status = "passed"; // completed
+        else if (index === activeIndex) status = "active"; // current
+        else status = "upcoming"; // not yet
+
+        itemHtml += `
+              <div class="relative flex flex-col items-center justify-center ${status == "upcoming" ? "opacity-50" : "opcity-100"}">
+                <img src=${rank.img} alt="basic-donation" class="w-24 h-24 z-20 ${status == "active" && "scale-120 mb-4"}" />
+                <h6 class="font-semibold text-white text-lg text-center">${rank.name}</h6>
+               <img src="assets/ilustration/donasi-light-active.png" alt="light" class="w-24 h-24 absolute bottom-0 left-0 opacity-50 ${
+                 status != "active" && "hidden"
+               }" />
+              </div>
+          `;
+      });
+      containerWrapper.innerHTML = itemHtml;
+
+      // my point
+      const elMyPont = document.getElementById("mypoint");
+      elMyPont.innerHTML = mypoint.toLocaleString("id", Intl.NumberFormat("id"));
+
+      // progress bar
+      const elProgressBar = document.getElementById("progress-bar");
+      const percent = ((dataRank[activeIndex + 1]?.point - dataRank[activeIndex]?.point) / mypoint) * 100;
+      elProgressBar.classList.add(`w-[${(activeIndex / (dataRank.length - 1)) * 100}%]`);
+
+      // Next Level rank
+      const textMorePoint = document.getElementById("need-more-point");
+      textMorePoint.innerText = (dataRank[activeIndex + 1]?.point - mypoint).toLocaleString("id", Intl.NumberFormat("id"));
+
+      const donaturRankName = document.getElementById("donatur-rank-name");
+      donaturRankName.innerText = dataRank[activeIndex + 1]?.honor;
+
+      const nextLevelName = document.getElementById("next-level-name");
+      nextLevelName.innerText = dataRank[activeIndex + 1]?.name;
+
+      const nextLevelPoint = document.getElementById("next-level-point");
+      nextLevelPoint.innerText = dataRank[activeIndex + 1]?.point;
+
+      const nextLevelImg = document.getElementById("next-level-img");
+      nextLevelImg.src = dataRank[activeIndex + 1]?.img;
+
+      const textRankGreeting = document.getElementById("rank-greeting");
+      textRankGreeting.innerText = dataRank[activeIndex]?.greeting;
+    </script>
   </body>
 </html>
+
+<!--  -->
+2000 1000 4000
