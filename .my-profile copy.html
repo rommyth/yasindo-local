@@ -135,41 +135,83 @@
       </div>
     </nav>
 
-    <!-- <div>
+    <div>
       <img src="assets/images/bg-profile.webp" alt="" class="w-full h-32 object-cover" />
-    </div> -->
+    </div>
 
-    <section class="bg-[#441C6E]">
-      <div class="max-w-7xl mx-auto px-4 py-12">
-        <h3 class="font-bold text-white text-xl">Fitur</h3>
-        <div id="tabs" class="grid grid-cols-1 lg:grid-cols-3 mt-3 gap-4">
-          <div
-            data-content-target="#donasi"
-            class="bg-gradient-to-r from-[#9966CF] to-[#5F358B] rounded-xl p-6 flex flex-row items-center gap-4 cursor-pointer hover:scale-105 hover:bg-gradient-to-l duration-200">
-            <img src="assets/ilustration/fitur-donasi.png" alt="fitur-donasi" class="w-20 h-20 object-contain" />
+    <section class="bg-primary--light">
+      <div class="max-w-7xl mx-auto pb-4 px-4 relative z-20">
+        <div class="bg-white -mt-12 bg-white p-8 rounded-xl flex flex-col lg:flex-row items-center justify-evenly text-center lg:text-start">
+          <!-- Photo -->
+          <div class="flex flex-row items-center gap-4">
+            <img src="https://placehold.co/50x50.png" alt="" class="w-18 h-18 rounded-full border border-primary--main" />
             <div>
-              <h3 class="font-bold text-2xl text-white">Donasi</h3>
-              <p class="text-white/70">Dana Abadi Satwa</p>
+              <h4 class="font-bold text-black text-base">Bramsetyo</h4>
+              <p class="text-xs text-primary--main">ID 160123456</p>
+              <a href="#" class="inline-block text-xs text-white bg-primary--main px-2 py-1 rounded-full mt-2">Edit Profile</a>
             </div>
           </div>
-          <div
-            data-content-target="#adopsi"
-            class="bg-gradient-to-r from-[#C39D4E] to-[#9C7016] rounded-xl p-6 flex flex-row items-center gap-4 cursor-pointer hover:scale-105 hover:bg-gradient-to-l duration-200">
-            <img src="assets/ilustration/fitur-adopsi.png" alt="fitur-adopsi" class="w-20 h-20 object-contain" />
-            <div>
-              <h3 class="font-bold text-2xl text-white">Adopsi</h3>
-              <p class="text-white/70">Pawmatchmeter Yasindo</p>
+          <!-- Divider -->
+          <div class="border-l border-gray-200 lg:h-16 m-4"></div>
+          <!-- Info -->
+          <div class="space-y-2">
+            <div class="flex flex-row items-center gap-2">
+              <i class="fa-solid fa-location-dot text-primary--main"></i>
+              <p class="font-bold text-sm text-black">Surabaya, Jawa Timur Indonesia</p>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <i class="fa-solid fa-phone text-primary--main"></i>
+              <p class="font-bold text-sm text-black">0878-2277-3698</p>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+              <i class="fa-solid fa-envelope text-primary--main"></i>
+              <p class="font-bold text-sm text-black">bramsetyo@gmail.com</p>
             </div>
           </div>
-          <div
-            data-content-target="#asuransi"
-            class="bg-gradient-to-r from-[#D1444A] to-[#A71B21] rounded-xl p-6 flex flex-row items-center gap-4 cursor-pointer hover:scale-105 hover:bg-gradient-to-l duration-200">
-            <img src="assets/ilustration/fitur-asuransi.png" alt="fitur-asuransi" class="w-20 h-20 object-contain" />
-            <div>
-              <h3 class="font-bold text-2xl text-white">Asuransi</h3>
-              <p class="text-white/70">Asuransi Hewan Yasindo</p>
-            </div>
+          <!-- Divider -->
+          <div class="border-l border-gray-200 lg:h-16 m-4"></div>
+          <!-- Kartu Asuransi -->
+          <div>
+            <h4 class="font-bold text-black text-xs mb-2">Kartu Asuransi</h4>
+            <img src="assets/images/kartu-donasi.png" alt="" class="w-48 h-auto object-contain" />
           </div>
+          <!-- Divider -->
+          <div class="border-l border-gray-200 lg:h-16 m-4"></div>
+          <!-- Level Donasi -->
+          <div>
+            <h4 class="font-bold text-black text-xs mb-2">Level Donasi</h4>
+            <img src="assets/images/level-donasi.png" alt="" class="w-18 object-contain" />
+            <h4 class="text-primary--soft text-xs mt-4">Poin</h4>
+            <p class="font-bold text-primary--main text-xs">1.250</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary--light">
+      <div class="max-w-7xl mx-auto pb-4 px-4">
+        <div class="bg-[#E3FFC3] rounded-xl p-4 flex flex-row items-center justify-center gap-4">
+          <img src="assets/icons/check-badge.svg" alt="" class="w-6 h-6" />
+          <p class="text-sm text-green-800">Asuransi & Plis Aktif (Hewan Peliharaan)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary--light">
+      <div class="max-w-7xl mx-auto py-4 px-4">
+        <div id="tabs" class="flex flex-row items-center gap-4 flex-wrap">
+          <button data-content-target="#detail-polis" class="bg-primary--soft rounded-lg px-4 py-2 text-primary--main text-sm cursor-pointer active">
+            Daftar Polis
+          </button>
+          <button data-content-target="#daftar-hewan" class="bg-primary--soft rounded-lg px-4 py-2 text-primary--main text-sm cursor-pointer">
+            Daftar Hewan
+          </button>
+          <button data-content-target="#riwayat-transaksi" class="bg-primary--soft rounded-lg px-4 py-2 text-primary--main text-sm cursor-pointer">
+            Riwayat Transaksi
+          </button>
+          <button data-content-target="#donasi" class="bg-primary--soft rounded-lg px-4 py-2 text-primary--main text-sm cursor-pointer">
+            Donasi
+          </button>
         </div>
       </div>
     </section>
@@ -177,7 +219,7 @@
     <section>
       <div id="content-tab-wrapper" class="max-w-7xl mx-auto px-4 py-4">
         <!-- Tab 1 : Detail Polis -->
-        <div id="asuransi" class="hidden">
+        <div id="detail-polis" class="hidden">
           <h2 id="title" class="font-bold text-black text-xl mb-4">Data Asuransi</h2>
 
           <div class="flex flex-col lg:flex-row items-start gap-8">
@@ -238,7 +280,7 @@
         </div>
 
         <!-- Tab 2 : Daftar Hewan -->
-        <div id="adopsi" class="hidden relative overflow-x-auto">
+        <div id="daftar-hewan" class="hidden relative overflow-x-auto">
           <h2 id="title" class="font-bold text-black text-xl mb-4">Daftar Hewan</h2>
 
           <div id="tables" class="min-w-[1025px] lg:min-w-none">
@@ -568,7 +610,7 @@
 
     <script>
       // Tabs
-      const tabs = document.querySelectorAll("#tabs div");
+      const tabs = document.querySelectorAll("#tabs button");
       const contents = document.querySelectorAll("#content-tab-wrapper > div");
 
       tabs.forEach((tab) => {
