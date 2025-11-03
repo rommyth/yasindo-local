@@ -323,14 +323,52 @@
           <div class="bg-primary--main p-6 pb-48 rounded-2xl rounded-b-[100px]">
             <h2 id="title" class="font-bold text-white text-3xl mb-2 text-center">Donasi</h2>
             <p class="text-sm text-white text-center mb-4">Seluruh Data Donasi Anda tercatat dengan baik dan transparan</p>
-            <div id="card-rank" class="swiper mt-12">
-              <div class="swiper-wrapper">
-                <!-- Script Data Rank -->
+            <div id="rank-wrapper" class="flex items-end justify-center gap-12 mt-8">
+              <!-- Rank Donation Item -->
+            </div>
+
+            <div class="flex flex-row items-center justify-between mt-12 mx-32">
+              <h5 class="text-white text-lg"><span class="font-bold">Poin</span> Donasi</h5>
+              <div id="mypoint" class="font-bold text-white text-2xl">1250</div>
+            </div>
+
+            <div class="relative mx-32 mt-8">
+              <div class="flex items-center justify-center">
+                <div class="absolute top-1.5 w-[calc(100%-52px)] h-2 bg-primary--soft/50 z-2 overflow-hidden">
+                  <div id="progress-bar" class="bg-white h-full"></div>
+                </div>
+              </div>
+
+              <div class="relative flex items-center justify-between z-4">
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Basic</div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Silver</div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Gold</div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Platinum</div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Diamond</div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-1 w-15">
+                  <div class="w-5 h-5 rounded-full bg-white"></div>
+                  <div class="font-semibold text-white text-xs opacity-50">Crown</div>
+                </div>
               </div>
             </div>
 
             <div class="max-w-xl mx-auto mt-12">
-              <div class="bg-primary--dark/50 rounded-t-xl flex flex-row items-center p-4 gap-3 lg:gap-6">
+              <div class="bg-primary--dark/50 rounded-t-xl flex flex-row items-center p-8 gap-6">
                 <div class="flex-1">
                   <h5 id="need-more-point" class="font-bold text-2xl text-white">3.750</h5>
                   <p class="text-white text-xs mt-2">
@@ -344,7 +382,7 @@
                     <img id="next-level-img" src="assets/ilustration/donais-3-gold-color.png" alt="" class="w-14 h-14" />
                     <div class="font-bold text-white">
                       <div id="next-level-name">Gold</div>
-                      <div id="next-level-point" class="text-xl">5.000</div>
+                      <div id="next-level-point" class="text-2xl">5.000 Poin</div>
                     </div>
                   </div>
                 </div>
@@ -356,14 +394,14 @@
           </div>
 
           <!-- Wrapper Donasi -->
-          <div class="max-w-6xl mx-auto relative z-20 -mt-30">
-            <div class="bg-white p-3 lg:p-6 rounded-xl shadow-lg">
+          <div class="max-w-3xl mx-auto relative z-20 -mt-30">
+            <div class="bg-white p-6 rounded-xl shadow-lg">
               <h3 class="font-bold text-black text-2xl">Daftar Riwayat Poin</h3>
 
               <!-- List Donasi -->
-              <div class="relative mt-12 grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div class="relative mt-12 flex flex-col gap-4">
                 <!-- Donasi Card Item -->
-                <div class="flex flex-col rounded-xl overflow-hidden">
+                <div class="flex flex-row rounded-xl overflow-hidden">
                   <div class="flex-3 p-3 bg-primary--light">
                     <div class="bg-white p-3 rounded-xl">
                       <p class="font-semibold text-sm text-primary--main">
@@ -371,24 +409,19 @@
                         quam minima quo?
                       </p>
                     </div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mt-3">
-                      <div class="flex-2 lg:col-span-2 bg-primary--main rounded-lg p-2 text-white font-semibold text-sm lg:text-base">
-                        Berdonasi Sebesar <br />Rp 1.000.000
-                      </div>
-                      <div class="flex-1 p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
-                        <p class="text-green-900 text-sm">Mendapatkan Poin</p>
-                        <h5 class="font-bold text-white text-lg lg:text-xl">100+ Poin</h5>
-                      </div>
+                    <div class="flex flex-row items-center gap-4 mt-3">
+                      <div class="flex-1 bg-primary--main rounded-lg text-xs p-2 text-white font-semibold">Berdonasi Sebesar Rp 1.000.000</div>
+                      <div class="p-2 text-xs font-medium text-gray-500">27 Oktober 2025, 16:45 WIB</div>
                     </div>
-                    <div class="bg-primary--soft h-[1px] w-full my-2"></div>
-                    <div class="flex flex-row items-center justify-between">
-                      <p class="text-gray-700 text-xs lg:text-base">27 Oktober 2025, 16:21 WIB</p>
-                      <a href="#" class="block px-12 py-2 rounded-lg bg-primary--soft text-sm text-primary--dark font-semibold">Detail</a>
-                    </div>
+                  </div>
+                  <div class="flex-1 px-4 py-6 bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
+                    <p class="text-green-900 text-base">Mendapatkan Poin</p>
+                    <h5 class="font-bold text-white text-2xl">100+ Poin</h5>
+                    <a href="#" class="block w-full py-3 rounded-xl text-white bg-lime-800 hover:bg-lime-700 mt-2 text-center text-sm">Detail</a>
                   </div>
                 </div>
                 <!-- Donasi Card Item -->
-                <div class="flex flex-col rounded-xl overflow-hidden">
+                <div class="flex flex-row rounded-xl overflow-hidden">
                   <div class="flex-3 p-3 bg-primary--light">
                     <div class="bg-white p-3 rounded-xl">
                       <p class="font-semibold text-sm text-primary--main">
@@ -396,24 +429,19 @@
                         quam minima quo?
                       </p>
                     </div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mt-3">
-                      <div class="flex-2 lg:col-span-2 bg-primary--main rounded-lg p-2 text-white font-semibold text-sm lg:text-base">
-                        Berdonasi Sebesar <br />Rp 1.000.000
-                      </div>
-                      <div class="flex-1 p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
-                        <p class="text-green-900 text-sm">Mendapatkan Poin</p>
-                        <h5 class="font-bold text-white text-xl">100+ Poin</h5>
-                      </div>
+                    <div class="flex flex-row items-center gap-4 mt-3">
+                      <div class="flex-1 bg-primary--main rounded-lg text-xs p-2 text-white font-semibold">Berdonasi Sebesar Rp 1.000.000</div>
+                      <div class="p-2 text-xs font-medium text-gray-500">27 Oktober 2025, 16:45 WIB</div>
                     </div>
-                    <div class="bg-primary--soft h-[1px] w-full my-2"></div>
-                    <div class="flex flex-row items-center justify-between">
-                      <p class="text-gray-700 text-xs lg:text-base">27 Oktober 2025, 16:21 WIB</p>
-                      <a href="#" class="block px-12 py-2 rounded-lg bg-primary--soft text-sm text-primary--dark font-semibold">Detail</a>
-                    </div>
+                  </div>
+                  <div class="flex-1 px-4 py-6 bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
+                    <p class="text-green-900 text-base">Mendapatkan Poin</p>
+                    <h5 class="font-bold text-white text-2xl">100+ Poin</h5>
+                    <a href="#" class="block w-full py-3 rounded-xl text-white bg-lime-800 hover:bg-lime-700 mt-2 text-center text-sm">Detail</a>
                   </div>
                 </div>
                 <!-- Donasi Card Item -->
-                <div class="flex flex-col rounded-xl overflow-hidden">
+                <div class="flex flex-row rounded-xl overflow-hidden">
                   <div class="flex-3 p-3 bg-primary--light">
                     <div class="bg-white p-3 rounded-xl">
                       <p class="font-semibold text-sm text-primary--main">
@@ -421,24 +449,19 @@
                         quam minima quo?
                       </p>
                     </div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mt-3">
-                      <div class="flex-2 lg:col-span-2 bg-primary--main rounded-lg p-2 text-white font-semibold text-sm lg:text-base">
-                        Berdonasi Sebesar <br />Rp 1.000.000
-                      </div>
-                      <div class="flex-1 p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
-                        <p class="text-green-900 text-sm">Mendapatkan Poin</p>
-                        <h5 class="font-bold text-white text-xl">100+ Poin</h5>
-                      </div>
+                    <div class="flex flex-row items-center gap-4 mt-3">
+                      <div class="flex-1 bg-primary--main rounded-lg text-xs p-2 text-white font-semibold">Berdonasi Sebesar Rp 1.000.000</div>
+                      <div class="p-2 text-xs font-medium text-gray-500">27 Oktober 2025, 16:45 WIB</div>
                     </div>
-                    <div class="bg-primary--soft h-[1px] w-full my-2"></div>
-                    <div class="flex flex-row items-center justify-between">
-                      <p class="text-gray-700 text-xs lg:text-base">27 Oktober 2025, 16:21 WIB</p>
-                      <a href="#" class="block px-12 py-2 rounded-lg bg-primary--soft text-sm text-primary--dark font-semibold">Detail</a>
-                    </div>
+                  </div>
+                  <div class="flex-1 px-4 py-6 bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
+                    <p class="text-green-900 text-base">Mendapatkan Poin</p>
+                    <h5 class="font-bold text-white text-2xl">100+ Poin</h5>
+                    <a href="#" class="block w-full py-3 rounded-xl text-white bg-lime-800 hover:bg-lime-700 mt-2 text-center text-sm">Detail</a>
                   </div>
                 </div>
                 <!-- Donasi Card Item -->
-                <div class="flex flex-col rounded-xl overflow-hidden">
+                <div class="flex flex-row rounded-xl overflow-hidden">
                   <div class="flex-3 p-3 bg-primary--light">
                     <div class="bg-white p-3 rounded-xl">
                       <p class="font-semibold text-sm text-primary--main">
@@ -446,20 +469,15 @@
                         quam minima quo?
                       </p>
                     </div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mt-3">
-                      <div class="flex-2 lg:col-span-2 bg-primary--main rounded-lg p-2 text-white font-semibold text-sm lg:text-base">
-                        Berdonasi Sebesar <br />Rp 1.000.000
-                      </div>
-                      <div class="flex-1 p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
-                        <p class="text-green-900 text-sm">Mendapatkan Poin</p>
-                        <h5 class="font-bold text-white text-xl">100+ Poin</h5>
-                      </div>
+                    <div class="flex flex-row items-center gap-4 mt-3">
+                      <div class="flex-1 bg-primary--main rounded-lg text-xs p-2 text-white font-semibold">Berdonasi Sebesar Rp 1.000.000</div>
+                      <div class="p-2 text-xs font-medium text-gray-500">27 Oktober 2025, 16:45 WIB</div>
                     </div>
-                    <div class="bg-primary--soft h-[1px] w-full my-2"></div>
-                    <div class="flex flex-row items-center justify-between">
-                      <p class="text-gray-700 text-xs lg:text-base">27 Oktober 2025, 16:21 WIB</p>
-                      <a href="#" class="block px-12 py-2 rounded-lg bg-primary--soft text-sm text-primary--dark font-semibold">Detail</a>
-                    </div>
+                  </div>
+                  <div class="flex-1 px-4 py-6 bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
+                    <p class="text-green-900 text-base">Mendapatkan Poin</p>
+                    <h5 class="font-bold text-white text-2xl">100+ Poin</h5>
+                    <a href="#" class="block w-full py-3 rounded-xl text-white bg-lime-800 hover:bg-lime-700 mt-2 text-center text-sm">Detail</a>
                   </div>
                 </div>
               </div>
@@ -545,47 +563,15 @@
     </script>
 
     <script>
-      const config = {
-        direction: "horizontal",
-        slidesPerView: 3,
-        spaceBetween: 24,
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 16,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-        },
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      };
-      const swiperCardRank = new Swiper("#card-rank", config);
-
-      const mypoint = 4000;
+      const mypoint = 5000;
       const highestPoint = 30000; // a.k Crown
       const dataRank = [
         {
           key: "basic",
           name: "Basic",
           point: 500,
-          img: "assets/images/card-donatur-basic.png",
-          icon: "assets/ilustration/donasi-1-basic.png",
+          img: "assets/ilustration/donasi-1-basic.png",
+          imgColor: "assets/ilustration/donasi-1-basic-color.png",
           greeting: "Mantap, sekarang kamu jadi Donatur Basic! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
           honor: "Donatur Basic",
         },
@@ -593,132 +579,78 @@
           key: "silver",
           name: "Silver",
           point: 1250,
-          img: "assets/images/card-donatur-silver.png",
-          icon: "assets/ilustration/donasi-2-silver.png",
+          img: "assets/ilustration/donasi-2-silver.png",
+          imgColor: "assets/ilustration/donasi-2-silver-color.png",
           greeting: "Mantap, sekarang kamu jadi Donatur Silver! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
           honor: "Donatur Silver",
         },
         {
           key: "gold",
           name: "Gold",
-          img: "assets/images/card-donatur-gold.png",
-          icon: "assets/ilustration/donasi-3-gold.png",
+          img: "assets/ilustration/donasi-3-gold.png",
           point: 5000,
+          imgColor: "assets/ilustration/donasi-3-gold-color.png",
           greeting: "Mantap, sekarang kamu jadi Donatur Gold! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
           honor: "Donatur Gold",
         },
         {
           key: "platinum",
           name: "Platinum",
-          img: "assets/images/card-donatur-platinum.png",
-          icon: "assets/ilustration/donasi-4-platinum.png",
+          img: "assets/ilustration/donasi-4-platinum.png",
           point: 10000,
+          imgColor: "assets/ilustration/donasi-4-platinum-color.png",
           greeting: "Mantap, sekarang kamu jadi Donatur Platinum! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
           honor: "Donatur Platinum",
         },
         {
           key: "diamond",
           name: "Diamond",
-          img: "assets/images/card-donatur-diamond.png",
-          icon: "assets/ilustration/donasi-5-diamond.png",
+          img: "assets/ilustration/donasi-5-diamond.png",
           point: 17500,
+          imgColor: "assets/ilustration/donasi-5-diamond-color.png",
           greeting: "Mantap, sekarang kamu jadi Donatur Diamond! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
           honor: "Donatur Diamond",
         },
         {
           key: "crown",
           name: "Crown",
-          img: "assets/images/card-donatur-crown.png",
-          icon: "assets/ilustration/donasi-6-crown.png",
+          img: "assets/ilustration/donasi-6-crown.png",
           point: 30000,
+          imgColor: "assets/ilustration/donasi-6-crown-color.png",
           greeting: "Mantap, sekarang kamu jadi Donatur Crown! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
           honor: "Donatur Crown",
         },
       ];
 
-      const wrapper = document.querySelector("#card-rank .swiper-wrapper");
+      const containerWrapper = document.getElementById("rank-wrapper");
+      let itemHtml = "";
       const activeIndex = dataRank.findLastIndex((m) => mypoint >= m.point);
-      const startPoint = dataRank[activeIndex].point ?? 0;
-      const endPoint = dataRank[activeIndex + 1].point ?? 0;
-      const percent = ((mypoint - startPoint) / (endPoint - startPoint)) * 100;
-      const clampedPercent = Math.max(0, Math.min(100, percent));
-
-      console.log("percent", percent);
-      swiperCardRank.slideTo(activeIndex);
       dataRank.forEach((rank, index) => {
         let status = "";
         if (index < activeIndex) status = "passed"; // completed
         else if (index === activeIndex) status = "active"; // current
         else status = "upcoming"; // not yet
 
-        const slide = document.createElement("div");
-        slide.className = "swiper-slide";
-        slide.innerHTML = `
-           <div class="relative rounded-2xl overflow-hidden">
-              <img src="${rank.img}" alt="" class="w-full object-cover" />
-              ${
-                status == "passed"
-                  ? `<div class="bg-white px-4 h-18 flex justify-center">
-                    <div class="flex flex-row items-center gap-2">
-                      <i class="fa-solid fa-circle-check text-lime-500 text-lg"></i>
-                      <p class="font-semibold text-xs lg:text-sm text-lime-500">Selamat! Level ini berhasil anda capai!</p>
-                    </div>
-                  </div>`
-                  : ""
-              }
-              ${
-                status == "active"
-                  ? `<div class="bg-white p-4 h-18 flex flex-col justify-center">
-                  ${
-                    index == dataRank.length - 1
-                      ? `
-                     <div class="flex flex-row items-center gap-4">
-                      <i class="fa-solid fa-circle-check text-primary--dark text-lg"></i>
-                      <p class="font-semibold text-xs lg:text-sm text-primary--dark">Selamat! Anda berhasil menjadi Donatur terbaik, pertahankan ya!</p>
-                    </div>
-                  `
-                      : `
-                      <div class="flex-1 flex flex-row items-center">
-                        <div class="flex-1 h-2 rounded-l-full bg-primary--soft">
-                          <div class="h-full w-[${clampedPercent}%] bg-primary--main rounded-full"></div>
-                        </div>
-                        <div class="flex items-center justify-center h-8 w-8 rounded-full bg-primary--soft">
-                          <img src="${rank.icon}" alt="" class="w-6 h-6" />
-                        </div>
-                      </div>
-                      <p class="text-xs lg:text-sm text-primary--main">
-                        <span class="font-bold">${mypoint - endPoint}</span> poin lagi untuk naik ke <span class="font-bold">${
-                          dataRank[activeIndex + 1].honor
-                        }</span>
-                      </p>
-                      `
-                  }
-                    </div>`
-                  : ""
-              }
-              ${
-                status == "upcoming"
-                  ? `<div class="bg-white p-4 h-18 flex flex-col justify-center">
-                      <div class="flex-1 flex flex-row items-center">
-                        <div class="flex-1 h-2 rounded-l-full bg-primary--soft">
-                          <div class="h-full w-[0%] bg-primary--main rounded-full"></div>
-                        </div>
-                        <div class="flex items-center justify-center h-8 w-8 rounded-full bg-primary--soft">
-                          <img src="${rank.icon}" alt="" class="w-6 h-6" />
-                        </div>
-                      </div>
-                      <p class="text-xs lg:text-sm text-primary--main">Capai dulu Donatur Silver ya!</p>
-                    </div>
-                    <div class="absolute inset-0 bg-black/70 flex items-center justify-center">
-                      <img src="assets/ilustration/lock.png" alt="locked" class="w-28 h-28" />
-                    </div>`
-                  : ""
-              }
-             </div>
-        `;
-
-        wrapper.appendChild(slide);
+        itemHtml += `
+              <div class="relative flex flex-col items-center justify-center ${status == "upcoming" ? "opacity-50" : "opcity-100"}">
+                <img src=${rank.img} alt="basic-donation" class="w-24 h-24 z-20 ${status == "active" && "scale-120 mb-4"}" />
+                <h6 class="font-semibold text-white text-lg text-center">${rank.name}</h6>
+               <img src="assets/ilustration/donasi-light-active.png" alt="light" class="w-24 h-24 absolute bottom-0 left-0 opacity-50 ${
+                 status != "active" && "hidden"
+               }" />
+              </div>
+          `;
       });
+      containerWrapper.innerHTML = itemHtml;
+
+      // my point
+      const elMyPont = document.getElementById("mypoint");
+      elMyPont.innerHTML = mypoint.toLocaleString("id", Intl.NumberFormat("id"));
+
+      // progress bar
+      const elProgressBar = document.getElementById("progress-bar");
+      const percent = ((dataRank[activeIndex + 1]?.point - dataRank[activeIndex]?.point) / mypoint) * 100;
+      elProgressBar.classList.add(`w-[${(activeIndex / (dataRank.length - 1)) * 100}%]`);
 
       // Next Level rank
       const textMorePoint = document.getElementById("need-more-point");
@@ -734,7 +666,7 @@
       nextLevelPoint.innerText = dataRank[activeIndex + 1]?.point;
 
       const nextLevelImg = document.getElementById("next-level-img");
-      nextLevelImg.src = dataRank[activeIndex + 1]?.icon;
+      nextLevelImg.src = dataRank[activeIndex + 1]?.img;
 
       const textRankGreeting = document.getElementById("rank-greeting");
       textRankGreeting.innerText = dataRank[activeIndex]?.greeting;
