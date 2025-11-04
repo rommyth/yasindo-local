@@ -237,90 +237,9 @@
           </div>
         </div>
 
-        <!-- Tab 2 : Daftar Hewan -->
-        <div id="adopsi" class="hidden relative overflow-x-auto">
-          <h2 id="title" class="font-bold text-black text-xl mb-4">Daftar Hewan</h2>
-
-          <div id="tables" class="min-w-[1025px] lg:min-w-none">
-            <!-- Tables Row item -->
-            <div class="flex flex-row items-start gap-6 py-2 border-b border-primary--soft hover:border-primary--main duration-200">
-              <div class="flex items-center justify-center w-7 h-7 rounded-full bg-primary--main text-white">1</div>
-              <div class="flex-1 flex flex-row items-start gap-4">
-                <img src="https://placehold.co/100x100.png" alt="" class="w-14 h-14 rounded-md object-cover" />
-                <div>
-                  <div class="text-xs text-primary--soft">ID-Hewan</div>
-                  <div class="mt-4 font-bold text-sm text-primary--main">123456</div>
-                </div>
-              </div>
-              <div class="flex-1">
-                <div class="text-xs text-primary--soft">Nama</div>
-                <div class="mt-4 font-bold text-sm text-primary--main">Mark</div>
-              </div>
-              <div class="flex-1">
-                <div class="text-xs text-primary--soft">Jenis</div>
-                <div class="mt-4 font-bold text-sm text-primary--main">Kucing</div>
-              </div>
-              <div class="flex-1">
-                <div class="text-xs text-primary--soft">Asuransi Aktif</div>
-                <div class="mt-4 font-bold text-sm text-primary--main">CLASSIC (Hewan Peliharaan)</div>
-              </div>
-              <a href="#" class="block px-4 bg-primary--main rounded-md py-1 text-xs text-white mt-4 hover:bg-primary--main-hover">Edit</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab 3 : Riwayat Transaksi -->
-        <div id="riwayat-transaksi" class="hidden">
-          <h2 id="title" class="font-bold text-black text-xl mb-4">Data Riwayat Transaksi</h2>
-
-          <div class="flex flex-row items-center gap-4">
-            <input type="checkbox" class="w-6 h-6" />
-            <div class="flex-1 relative mt-4 mb-6">
-              <span class="sr-only">Search</span>
-              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                <i class="fa-solid fa-search text-primary--main"></i>
-              </div>
-              <input
-                type="text"
-                id="input-group-1"
-                class="bg-primary--light border border-primary--main text-gray-900 text-sm rounded-full block w-full ps-10 p-4"
-                placeholder="Cari transaksi" />
-            </div>
-          </div>
-
-          <div class="relative overflow-x-auto">
-            <div id="table-transaction" class="min-w-[1024px]">
-              <!-- Tables Row item -->
-              <div class="flex flex-row items-center gap-4 py-2 border-b border-primary--soft hover:border-primary--main duration-200">
-                <input type="checkbox" class="w-4 h-4" />
-                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">12 Agustus 2023</div>
-                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Donasi DAS</div>
-                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Rp150.000</div>
-                <div class="font-medium text-sm lg:text-base text-primary--main bg-primary--soft px-4 py-2 rounded-lg">Donasi</div>
-                <div class="font-medium text-sm lg:text-base text-green-500 bg-green-100 px-4 py-2 rounded-lg">Success</div>
-                <a href="#" class="font-medium text-sm lg:text-base text-white bg-primary--main hover:bg-primary--main-hover px-4 py-2 rounded-lg"
-                  >Detail</a
-                >
-              </div>
-              <!-- Tables Row item -->
-              <div class="flex flex-row items-center gap-4 py-2 border-b border-primary--soft hover:border-primary--main duration-200">
-                <input type="checkbox" class="w-4 h-4" />
-                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">12 Agustus 2023</div>
-                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Donasi DAS</div>
-                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Rp150.000</div>
-                <div class="font-medium text-sm lg:text-base text-primary--main bg-primary--soft px-4 py-2 rounded-lg">Donasi</div>
-                <div class="font-medium text-sm lg:text-base text-green-500 bg-green-100 px-4 py-2 rounded-lg">Success</div>
-                <a href="#" class="font-medium text-sm lg:text-base text-white bg-primary--main hover:bg-primary--main-hover px-4 py-2 rounded-lg"
-                  >Detail</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab 4 : Donasi -->
+        <!-- Tab 1 : Donasi -->
         <div id="donasi" class="">
-          <div class="bg-primary--main p-6 pb-48 rounded-2xl rounded-b-[100px]">
+          <div class="bg-primary--main p-6 pb-18 rounded-t-2xl">
             <h2 id="title" class="font-bold text-white text-3xl mb-2 text-center">Donasi</h2>
             <p class="text-sm text-white text-center mb-4">Seluruh Data Donasi Anda tercatat dengan baik dan transparan</p>
             <div id="card-rank" class="swiper mt-12">
@@ -329,13 +248,19 @@
               </div>
             </div>
 
-            <div class="max-w-xl mx-auto mt-12">
-              <div class="bg-primary--dark/50 rounded-t-xl flex flex-row items-center p-4 gap-3 lg:gap-6">
+            <div class="max-w-2xl mx-auto mt-12">
+              <div class="bg-primary--dark/50 rounded-t-xl flex flex-col lg:flex-row items-start px-4 py-6 gap-3 lg:gap-6">
                 <div class="flex-1">
-                  <h5 id="need-more-point" class="font-bold text-2xl text-white">3.750</h5>
-                  <p class="text-white text-xs mt-2">
-                    poin lagi untuk naik ke <br /><span id="donatur-rank-name" class="font-bold">Donatur Gold</span>
+                  <p class="text-white text-xs">Total Donasi saat ini</p>
+                  <h5 class="font-bold text-2xl text-white mt-2">Rp22.500.000</h5>
+                </div>
+                <div class="h-20 w-[1px] bg-white/50"></div>
+                <div class="flex-1">
+                  <p class="text-white text-xs">
+                    Poin anda sekarang sebagai<br />
+                    <span id="donatur-rank-name" class="font-bold">Donatur Silver</span>
                   </p>
+                  <h5 class="font-bold text-2xl text-white mt-2">22.500 poin</h5>
                 </div>
                 <div class="h-20 w-[1px] bg-white/50"></div>
                 <div class="flex-1">
@@ -355,27 +280,106 @@
             </div>
           </div>
 
+          <!-- Reward -->
+          <div class="bg-gradient-to-b from-primary--main to-primary--dark rounded-b-[100px]">
+            <div class="max-w-6xl mx-auto relative px-6 pb-56">
+              <h2 class="font-bold text-white text-4xl text-center">Reward</h2>
+              <p class="text-white text-lg text-center">Klaim berbagai reward yang anda bisa gunakan</p>
+              <div class="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-4">
+                <!-- Rewared Item -->
+                <div class="relative">
+                  <div class="grid grid-cols-3 items-center">
+                    <div class="h-full bg-violet-100 text-center flex items-center justify-center">
+                      <p class="text-primary--main text-base">Voucher <span class="font-bold text-2xl">Yasindo</span></p>
+                    </div>
+                    <div class="col-span-2 bg-gradient-to-r from-violet-700 to-primary--dark p-4">
+                      <div class="text-white/80">DISCOUNT</div>
+                      <div class="font-bold text-xl text-white">Rp150.000</div>
+                      <div class="text-white/80 text-[7pt] mt-3">*Applicable Terms & Conditions</div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row items-center justify-between bg-white p-4">
+                    <div>
+                      <div class="text-gray-500 text-xs">Expired</div>
+                      <p class="font-semibold text-xs text-red-500">10 Oktober 2025</p>
+                    </div>
+                    <button class="block px-4 py-2 rounded-sm bg-primary--main text-white text-xs hover:bg-primary--dark duration-200">Klaim</button>
+                  </div>
+                </div>
+                <!-- Rewared Item -->
+                <div class="relative">
+                  <div class="grid grid-cols-3 items-center">
+                    <div class="h-full bg-violet-100 text-center flex items-center justify-center">
+                      <p class="text-primary--main text-base">Voucher <span class="font-bold text-2xl">Yasindo</span></p>
+                    </div>
+                    <div class="col-span-2 bg-gradient-to-r from-violet-700 to-primary--dark p-4">
+                      <div class="text-white/80">DISCOUNT</div>
+                      <div class="font-bold text-xl text-white">Rp150.000</div>
+                      <div class="text-white/80 text-[7pt] mt-3">*Applicable Terms & Conditions</div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row items-center justify-between bg-white p-4">
+                    <div>
+                      <div class="text-gray-500 text-xs">Expired</div>
+                      <p class="font-semibold text-xs text-red-500">10 Oktober 2025</p>
+                    </div>
+                    <button class="block px-4 py-2 rounded-sm bg-primary--main text-white text-xs hover:bg-primary--dark duration-200">Klaim</button>
+                  </div>
+                </div>
+                <!-- Rewared Item -->
+                <div class="relative">
+                  <div class="grid grid-cols-3 items-center">
+                    <div class="h-full bg-violet-100 text-center flex items-center justify-center">
+                      <p class="text-primary--main text-base">Voucher <span class="font-bold text-2xl">Yasindo</span></p>
+                    </div>
+                    <div class="col-span-2 bg-gradient-to-r from-violet-700 to-primary--dark p-4">
+                      <div class="text-white/80">DISCOUNT</div>
+                      <div class="font-bold text-xl text-white">Rp150.000</div>
+                      <div class="text-white/80 text-[7pt] mt-3">*Applicable Terms & Conditions</div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row items-center justify-between bg-white p-4">
+                    <div>
+                      <div class="text-gray-500 text-xs">Expired</div>
+                      <p class="font-semibold text-xs text-red-500">10 Oktober 2025</p>
+                    </div>
+                    <button class="block px-4 py-2 rounded-sm bg-primary--main text-white text-xs hover:bg-primary--dark duration-200">Klaim</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-center mt-12">
+                <a
+                  href="#"
+                  class="inline-block mx-auto bg-primary--soft px-4 py-2 rounded-md font-semibold text-xs text-primary--dark hover:bg-purple-300 duration-200"
+                  >Lihat lebih banyak</a
+                >
+              </div>
+            </div>
+          </div>
+
           <!-- Wrapper Donasi -->
-          <div class="max-w-6xl mx-auto relative z-20 -mt-30">
+          <div class="max-w-6xl mx-auto relative z-20 -mt-36">
             <div class="bg-white p-3 lg:p-6 rounded-xl shadow-lg">
               <h3 class="font-bold text-black text-2xl">Daftar Riwayat Poin</h3>
 
               <!-- List Donasi -->
-              <div class="relative mt-12 grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div class="relative mt-12 grid grid-cols-1 gap-4">
                 <!-- Donasi Card Item -->
                 <div class="flex flex-col rounded-xl overflow-hidden">
                   <div class="flex-3 p-3 bg-primary--light">
                     <div class="bg-white p-3 rounded-xl">
                       <p class="font-semibold text-sm text-primary--main">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cumque excepturi id fugit, dolore quidem ratione provident
-                        quam minima quo?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptate molestiae sunt cum dolorum repudiandae
+                        asperiores et dignissimos nostrum eos necessitatibus minus perferendis amet suscipit modi! Commodi quam sint pariatur?
                       </p>
                     </div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mt-3">
-                      <div class="flex-2 lg:col-span-2 bg-primary--main rounded-lg p-2 text-white font-semibold text-sm lg:text-base">
-                        Berdonasi Sebesar <br />Rp 1.000.000
+                    <div class="grid grid-cols-2 lg:grid-cols-6 gap-2 mt-3">
+                      <div
+                        class="lg:col-span-5 bg-primary--main rounded-lg px-4 py-2 text-white font-semibold text-sm lg:text-base flex items-center">
+                        Berdonasi Sebesar Rp 1.000.000
                       </div>
-                      <div class="flex-1 p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
+                      <div class="p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
                         <p class="text-green-900 text-sm">Mendapatkan Poin</p>
                         <h5 class="font-bold text-white text-lg lg:text-xl">100+ Poin</h5>
                       </div>
@@ -392,17 +396,18 @@
                   <div class="flex-3 p-3 bg-primary--light">
                     <div class="bg-white p-3 rounded-xl">
                       <p class="font-semibold text-sm text-primary--main">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cumque excepturi id fugit, dolore quidem ratione provident
-                        quam minima quo?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptate molestiae sunt cum dolorum repudiandae
+                        asperiores et dignissimos nostrum eos necessitatibus minus perferendis amet suscipit modi! Commodi quam sint pariatur?
                       </p>
                     </div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mt-3">
-                      <div class="flex-2 lg:col-span-2 bg-primary--main rounded-lg p-2 text-white font-semibold text-sm lg:text-base">
-                        Berdonasi Sebesar <br />Rp 1.000.000
+                    <div class="grid grid-cols-2 lg:grid-cols-6 gap-2 mt-3">
+                      <div
+                        class="lg:col-span-5 bg-primary--main rounded-lg px-4 py-2 text-white font-semibold text-sm lg:text-base flex items-center">
+                        Berdonasi Sebesar Rp 1.000.000
                       </div>
-                      <div class="flex-1 p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
+                      <div class="p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
                         <p class="text-green-900 text-sm">Mendapatkan Poin</p>
-                        <h5 class="font-bold text-white text-xl">100+ Poin</h5>
+                        <h5 class="font-bold text-white text-lg lg:text-xl">100+ Poin</h5>
                       </div>
                     </div>
                     <div class="bg-primary--soft h-[1px] w-full my-2"></div>
@@ -417,17 +422,18 @@
                   <div class="flex-3 p-3 bg-primary--light">
                     <div class="bg-white p-3 rounded-xl">
                       <p class="font-semibold text-sm text-primary--main">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cumque excepturi id fugit, dolore quidem ratione provident
-                        quam minima quo?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptate molestiae sunt cum dolorum repudiandae
+                        asperiores et dignissimos nostrum eos necessitatibus minus perferendis amet suscipit modi! Commodi quam sint pariatur?
                       </p>
                     </div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mt-3">
-                      <div class="flex-2 lg:col-span-2 bg-primary--main rounded-lg p-2 text-white font-semibold text-sm lg:text-base">
-                        Berdonasi Sebesar <br />Rp 1.000.000
+                    <div class="grid grid-cols-2 lg:grid-cols-6 gap-2 mt-3">
+                      <div
+                        class="lg:col-span-5 bg-primary--main rounded-lg px-4 py-2 text-white font-semibold text-sm lg:text-base flex items-center">
+                        Berdonasi Sebesar Rp 1.000.000
                       </div>
-                      <div class="flex-1 p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
+                      <div class="p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
                         <p class="text-green-900 text-sm">Mendapatkan Poin</p>
-                        <h5 class="font-bold text-white text-xl">100+ Poin</h5>
+                        <h5 class="font-bold text-white text-lg lg:text-xl">100+ Poin</h5>
                       </div>
                     </div>
                     <div class="bg-primary--soft h-[1px] w-full my-2"></div>
@@ -437,31 +443,871 @@
                     </div>
                   </div>
                 </div>
-                <!-- Donasi Card Item -->
-                <div class="flex flex-col rounded-xl overflow-hidden">
-                  <div class="flex-3 p-3 bg-primary--light">
-                    <div class="bg-white p-3 rounded-xl">
-                      <p class="font-semibold text-sm text-primary--main">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cumque excepturi id fugit, dolore quidem ratione provident
-                        quam minima quo?
-                      </p>
-                    </div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mt-3">
-                      <div class="flex-2 lg:col-span-2 bg-primary--main rounded-lg p-2 text-white font-semibold text-sm lg:text-base">
-                        Berdonasi Sebesar <br />Rp 1.000.000
+              </div>
+              <div class="flex items-center justify-center mt-12">
+                <a
+                  href="#"
+                  class="inline-block mx-auto bg-primary--soft px-4 py-2 rounded-md font-semibold text-xs text-primary--dark hover:bg-purple-300 duration-200"
+                  >Lihat lebih banyak</a
+                >
+              </div>
+            </div>
+
+            <div class="mt-4 rounded-3xl p-6" style="background: url('assets/images/bg-purple-curly.webp') center/cover">
+              <h3 class="font-semibold text-2xl text-white text-center py-4">Donasi kamu sudah mmebantu banyak hewan</h3>
+              <div class="mt-5">
+                <div id="info-donation" class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="relative rounded-2xl overflow-hidden">
+                        <img src="assets/images/program-1.webp" alt="" class="w-full aspect-4/3 object-cover" />
+                        <div class="p-4 bg-white">
+                          <p class="text-gray-600 text-xs">2 Oktober 2025</p>
+                          <h5 class="font-semibold text-black text-base/5 mt-1">Beasiswa Pendidikan Claon Dokter Hewan / Talent</h5>
+                          <p class="text-gray-600 text-xs mt-4">Telah dibuka pendidikan calon dokter hewan di Jawa Tengah melalui pro...</p>
+                          <a
+                            href="#"
+                            class="block bg-primary--soft rounded-md text-primary--main w--full font-semibold text-center py-2 mt-3 hover:bg-primary--main hover:text-primary--soft duration-100"
+                            >Selengkapnya</a
+                          >
+                        </div>
                       </div>
-                      <div class="flex-1 p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
-                        <p class="text-green-900 text-sm">Mendapatkan Poin</p>
-                        <h5 class="font-bold text-white text-xl">100+ Poin</h5>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="relative rounded-2xl overflow-hidden">
+                        <img src="assets/images/program-2.webp" alt="" class="w-full aspect-4/3 object-cover" />
+                        <div class="p-4 bg-white">
+                          <p class="text-gray-600 text-xs">2 Oktober 2025</p>
+                          <h5 class="font-semibold text-black text-base/5 mt-1">Beasiswa Pendidikan Claon Dokter Hewan / Talent</h5>
+                          <p class="text-gray-600 text-xs mt-4">Telah dibuka pendidikan calon dokter hewan di Jawa Tengah melalui pro...</p>
+                          <a
+                            href="#"
+                            class="block bg-primary--soft rounded-md text-primary--main w--full font-semibold text-center py-2 mt-3 hover:bg-primary--main hover:text-primary--soft duration-100"
+                            >Selengkapnya</a
+                          >
+                        </div>
                       </div>
                     </div>
-                    <div class="bg-primary--soft h-[1px] w-full my-2"></div>
-                    <div class="flex flex-row items-center justify-between">
-                      <p class="text-gray-700 text-xs lg:text-base">27 Oktober 2025, 16:21 WIB</p>
-                      <a href="#" class="block px-12 py-2 rounded-lg bg-primary--soft text-sm text-primary--dark font-semibold">Detail</a>
+                    <div class="swiper-slide">
+                      <div class="relative rounded-2xl overflow-hidden">
+                        <img src="assets/images/program-3.webp" alt="" class="w-full aspect-4/3 object-cover" />
+                        <div class="p-4 bg-white">
+                          <p class="text-gray-600 text-xs">2 Oktober 2025</p>
+                          <h5 class="font-semibold text-black text-base/5 mt-1">Beasiswa Pendidikan Claon Dokter Hewan / Talent</h5>
+                          <p class="text-gray-600 text-xs mt-4">Telah dibuka pendidikan calon dokter hewan di Jawa Tengah melalui pro...</p>
+                          <a
+                            href="#"
+                            class="block bg-primary--soft rounded-md text-primary--main w--full font-semibold text-center py-2 mt-3 hover:bg-primary--main hover:text-primary--soft duration-100"
+                            >Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="relative rounded-2xl overflow-hidden">
+                        <img src="assets/images/program-1.webp" alt="" class="w-full aspect-4/3 object-cover" />
+                        <div class="p-4 bg-white">
+                          <p class="text-gray-600 text-xs">2 Oktober 2025</p>
+                          <h5 class="font-semibold text-black text-base/5 mt-1">Beasiswa Pendidikan Claon Dokter Hewan / Talent</h5>
+                          <p class="text-gray-600 text-xs mt-4">Telah dibuka pendidikan calon dokter hewan di Jawa Tengah melalui pro...</p>
+                          <a
+                            href="#"
+                            class="block bg-primary--soft rounded-md text-primary--main w--full font-semibold text-center py-2 mt-3 hover:bg-primary--main hover:text-primary--soft duration-100"
+                            >Selengkapnya</a
+                          >
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2 : Daftar Hewan -->
+        <div id="adopsi" class="">
+          <div class="bg-gradient-to-b from-[#DB9917] to-[#92650E] p-6 pb-42 rounded-t-2xl rounded-b-[100px]">
+            <h2 id="title" class="font-bold text-white text-3xl mb-2 text-center">Jadilah Pawowner Sekarang!</h2>
+            <p class="text-sm text-white text-center mb-4">Jadilah pemilik hewan peliharaan dan selamatkan satwa.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 mt-12 gap-4">
+              <div class="relative rounded-xl overflow-hidden">
+                <img src="https://placehold.co/400x200" alt="" class="w-full h-70 object-cover" />
+                <div class="p-6 bg-orange-100 min-h-62">
+                  <h3 class="font-bold text-3xl text-black">Pawoner Offline</h3>
+                  <p class="font-semibold text-base text-gray-500 mt-3">
+                    Adopsi hewan peliharaanya secara offline dan berkewajiban mampu menjaga hewan peliharaanya, apabila terbukti pawowner tidak cakap
+                    dalam hal tersebut maka yasindo bersama jaringan shelter kucing dan anjing akan membawanya kembali ke shelter.
+                  </p>
+                </div>
+                <div class="bg-primary--main p-6 flex flex-row items-center gap-4">
+                  <p class="font-semibold text-white text-lg">Coba Sekarang</p>
+                  <i class="fa-solid fa-arrow-right text-lg text-white"></i>
+                </div>
+              </div>
+              <div class="relative rounded-xl overflow-hidden">
+                <img src="https://placehold.co/400x200" alt="" class="w-full h-70 object-cover" />
+                <div class="p-6 bg-yellow-100 min-h-62">
+                  <h3 class="font-bold text-3xl text-black">Pawoner Online</h3>
+                  <p class="font-semibold text-base text-gray-500 mt-3">
+                    Adopsi hewan peliharaan tidak akan dibawa ke rumah. Anabul yang telah di adopsi oleh pawowner online akan tetap di shelter namun
+                    mereka memiliki akses khusus untuk bisa mengunjunginya setiap waktu dan membawanya hanya untuk sekedar jalan-jalan atau bermain
+                    bersama di sela-sela aktifitas mereka.
+                  </p>
+                </div>
+                <div class="bg-primary--main p-6 flex flex-row items-center gap-4">
+                  <p class="font-semibold text-white text-lg">Coba Sekarang</p>
+                  <i class="fa-solid fa-arrow-right text-lg text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-6xl mx-auto z-20 -mt-24">
+            <div class="bg-white rounded-3xl shadow-lg p-8">
+              <h3 class="font-bold text-lg lg:text-2xl">Daftar Hewan Peliharaan Anda</h3>
+
+              <div id="list-my-pet" class="swiper mt-12">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-[#FFEDC9]">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-amber-400 mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Asuransi</p>
+                          <p class="font-semibold text-blue-500 text-sm text-end">Aktif</p>
+                        </div>
+                      </div>
+                      <a href="#" class="block flex flex-row items-center justify-center bg-[#DB9917] p-4 gap-2 hover:bg-amber-600 duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-[#FFEDC9]">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-amber-400 mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Asuransi</p>
+                          <p class="font-semibold text-blue-500 text-sm text-end">Aktif</p>
+                        </div>
+                      </div>
+                      <a href="#" class="block flex flex-row items-center justify-center bg-[#DB9917] p-4 gap-2 hover:bg-amber-600 duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-[#FFEDC9]">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-amber-400 mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Asuransi</p>
+                          <p class="font-semibold text-blue-500 text-sm text-end">Aktif</p>
+                        </div>
+                      </div>
+                      <a href="#" class="block flex flex-row items-center justify-center bg-[#DB9917] p-4 gap-2 hover:bg-amber-600 duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-[#FFEDC9]">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-amber-400 mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Asuransi</p>
+                          <p class="font-semibold text-blue-500 text-sm text-end">Aktif</p>
+                        </div>
+                      </div>
+                      <a href="#" class="block flex flex-row items-center justify-center bg-[#DB9917] p-4 gap-2 hover:bg-amber-600 duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-[#FFEDC9]">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-amber-400 mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Asuransi</p>
+                          <p class="font-semibold text-blue-500 text-sm text-end">Aktif</p>
+                        </div>
+                      </div>
+                      <a href="#" class="block flex flex-row items-center justify-center bg-[#DB9917] p-4 gap-2 hover:bg-amber-600 duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination-my-pet text-center !relative !mt-12"></div>
+              </div>
+
+              <div class="w-full bg-gray-300 h-[1px] my-8"></div>
+
+              <h3 class="font-bold text-lg lg:text-2xl">Daftar Hewan Adopsi</h3>
+
+              <div class="flex flex-row items-center gap-4 mt-4">
+                <button class="px-6 py-2 text-white bg-primary--main rounded-lg">Kucing</button>
+                <button
+                  class="px-6 py-2 text-primary--dark bg-primary--soft rounded-lg hover:bg-primary--main hover:text-white cursor-pointer duration-200">
+                  Anjing
+                </button>
+              </div>
+
+              <div id="list-adoption-animal" class="swiper mt-8">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative rounded-3xl overflow-hidden">
+                      <img src="https://placehold.co/200x200" alt="" class="w-full aspect-3/2 object-cover" />
+                      <div class="p-4 bg-primary--soft">
+                        <h5 class="font-semibold text-black text-xl">Lussy</h5>
+                        <p class="font-semibold text-base text-primary--main mb-2">RFID 16745631</p>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Kucing</p>
+                          <p class="font-semibold text-black text-sm text-end">British Short Hair</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Usia</p>
+                          <p class="font-semibold text-black text-sm text-end">2 tahun 1 bulan</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-between">
+                          <p class="text-gray-500 text-sm">Jenis Kelamin</p>
+                          <p class="font-semibold text-primary--main text-sm text-end">Jantan</p>
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="block flex flex-row items-center justify-center bg-primary--main p-4 gap-2 hover:bg-primary--main-hover duration-200">
+                        <p class="font-semibold text-white text-base">Detail</p>
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination-adoption text-center !relative !mt-12"></div>
               </div>
             </div>
           </div>
@@ -544,8 +1390,40 @@
       });
     </script>
 
+    <!-- Script Tab Donasi -->
     <script>
-      const config = {
+      const swiperInfoDonasi = new Swiper("#info-donation", {
+        direction: "horizontal",
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 24,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      const swiperCardRank = new Swiper("#card-rank", {
         direction: "horizontal",
         slidesPerView: 3,
         spaceBetween: 24,
@@ -574,8 +1452,7 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-      };
-      const swiperCardRank = new Swiper("#card-rank", config);
+      });
 
       const mypoint = 4000;
       const highestPoint = 30000; // a.k Crown
@@ -643,7 +1520,6 @@
       const percent = ((mypoint - startPoint) / (endPoint - startPoint)) * 100;
       const clampedPercent = Math.max(0, Math.min(100, percent));
 
-      console.log("percent", percent);
       swiperCardRank.slideTo(activeIndex);
       dataRank.forEach((rank, index) => {
         let status = "";
@@ -739,8 +1615,73 @@
       const textRankGreeting = document.getElementById("rank-greeting");
       textRankGreeting.innerText = dataRank[activeIndex]?.greeting;
     </script>
+
+    <!-- Script Tab Adopsi -->
+    <script>
+      const swiperListAdoptionAnimal = new Swiper("#list-adoption-animal", {
+        direction: "horizontal",
+        grid: {
+          fill: "row",
+          rows: "2",
+        },
+        slidesPerView: 4,
+        spaceBetween: 24,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination-adoption",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      const swiperListMyPet = new Swiper("#list-my-pet", {
+        direction: "horizontal",
+        slidesPerView: 4,
+        spaceBetween: 24,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination-my-pet",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
-
-<!--  -->
-2000 1000 4000

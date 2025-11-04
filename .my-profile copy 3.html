@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Yasindo | Asuransi Satwa Indonesia</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/logo/favicon.png" />
+
+    <meta
+      name="description"
+      content="YASINDO adalah platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia. Lindungi kesehatan dan kesejahteraan hewan Anda dengan solusi asuransi cerdas, premi fleksibel, dan layanan klaim mudah." />
+    <meta
+      name="keywords"
+      content="asuransi hewan, asuransi ternak, asuransi kucing, asuransi anjing, perlindungan hewan, YASINDO, asuransi Indonesia, klaim asuransi hewan, premi asuransi hewan, dana abadi satwa" />
+    <meta name="author" content="YASINDO" />
+    <meta property="og:title" content="YASINDO | Asuransi Satwa Indonesia" />
+    <meta
+      property="og:description"
+      content="Platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia. Perlindungan komprehensif, premi fleksibel, dan layanan terbaik untuk hewan Anda." />
+    <meta property="og:image" content="assets/logo/brand.webp" />
+    <meta property="og:url" content="https://yasindo.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YASINDO | Asuransi Satwa Indonesia" />
+    <meta name="twitter:description" content="Lindungi hewan peliharaan dan ternak Anda dengan asuransi terbaik dari YASINDO." />
+    <meta name="twitter:image" content="assets/logo/brand.webp" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary--soft: #cfb8e6;
+        --color-primary--main: #5f358b;
+        --color-primary--dark: #2a074e;
+        --color-primary--main-hover: #6b4297;
+        --color-primary--light: #f7f0ff;
+        --color-secondary--main: #d1444a;
+        --color-secondary--main-hover: #d45c62;
+        --color-secondary--light: #ffe9ea;
+      }
+
+      .active {
+        @apply bg-primary--main text-white;
+      }
+    </style>
+
+    <!-- SwiperJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Fontawesome v7 icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="bg-white sticky w-full z-99 top-0 start-0 border-b border-gray-200">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/logo/brand.webp" class="h-12 md:h-16" alt="Flowbite Logo" />
+        </a>
+        <div class="flex md:order-2 space-x-1">
+          <a href="#" class="hidden md:block font-semibold block px-4 py-2 text-black rounded-sm" aria-current="page">Kontak</a>
+
+          <!-- Pre login -->
+          <div class="hidden">
+            <button
+              type="button"
+              class="text-primary--main hover:text-primary--main bg-primary--light hover:bg-primary--soft font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Masuk
+            </button>
+            <button type="button" class="text-white bg-primary--main hover:bg-purple-800 font-medium rounded-lg text-sm px-4 py-2 text-center">
+              Daftar
+            </button>
+          </div>
+
+          <!-- Logged in -->
+          <div>
+            <a href="my-profile.html" class="flex flex-row items-center gap-2">
+              <img src="https://placehold.co/200x200.png" class="w-10 h-10 rounded-full border border-gray-200" />
+              <i class="fa-solid fa-chevron-down text-xs"></i>
+            </a>
+          </div>
+
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between w-full hidden md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                aria-current="page"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="partnership.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Partnership</a
+              >
+            </li>
+            <li>
+              <a
+                href="about-us.html"
+                class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Tentang Kita</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-1 text-black hover:text-primary--main border-b-3 border-transparent hover:border-b-primary--main"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div>
+      <img src="assets/images/bg-profile.webp" alt="" class="w-full h-32 object-cover" />
+    </div> -->
+
+    <section class="bg-[#441C6E]">
+      <div class="max-w-7xl mx-auto px-4 py-12">
+        <h3 class="font-bold text-white text-xl">Fitur</h3>
+        <div id="tabs" class="grid grid-cols-1 lg:grid-cols-3 mt-3 gap-4">
+          <div
+            data-content-target="#donasi"
+            class="bg-gradient-to-r from-[#9966CF] to-[#5F358B] rounded-xl p-6 flex flex-row items-center gap-4 cursor-pointer hover:scale-105 hover:bg-gradient-to-l duration-200">
+            <img src="assets/ilustration/fitur-donasi.png" alt="fitur-donasi" class="w-20 h-20 object-contain" />
+            <div>
+              <h3 class="font-bold text-2xl text-white">Donasi</h3>
+              <p class="text-white/70">Dana Abadi Satwa</p>
+            </div>
+          </div>
+          <div
+            data-content-target="#adopsi"
+            class="bg-gradient-to-r from-[#C39D4E] to-[#9C7016] rounded-xl p-6 flex flex-row items-center gap-4 cursor-pointer hover:scale-105 hover:bg-gradient-to-l duration-200">
+            <img src="assets/ilustration/fitur-adopsi.png" alt="fitur-adopsi" class="w-20 h-20 object-contain" />
+            <div>
+              <h3 class="font-bold text-2xl text-white">Adopsi</h3>
+              <p class="text-white/70">Pawmatchmeter Yasindo</p>
+            </div>
+          </div>
+          <div
+            data-content-target="#asuransi"
+            class="bg-gradient-to-r from-[#D1444A] to-[#A71B21] rounded-xl p-6 flex flex-row items-center gap-4 cursor-pointer hover:scale-105 hover:bg-gradient-to-l duration-200">
+            <img src="assets/ilustration/fitur-asuransi.png" alt="fitur-asuransi" class="w-20 h-20 object-contain" />
+            <div>
+              <h3 class="font-bold text-2xl text-white">Asuransi</h3>
+              <p class="text-white/70">Asuransi Hewan Yasindo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="content-tab-wrapper" class="max-w-7xl mx-auto px-4 py-4">
+        <!-- Tab 1 : Detail Polis -->
+        <div id="asuransi" class="hidden">
+          <h2 id="title" class="font-bold text-black text-xl mb-4">Data Asuransi</h2>
+
+          <div class="flex flex-col lg:flex-row items-start gap-8">
+            <!-- 1. Number -->
+            <div class="bg-primary--main rounded-full h-8 w-8 flex items-center justify-center text-white font-medium text-sm">1</div>
+            <!-- 2. Card -->
+            <div id="card" class="w-90">
+              <img src="assets/images/kartu-donasi.png" alt="" class="w-full object-contain" />
+              <!-- Indicator Card -->
+              <div class="flex flex-row items-center justify-between mt-4">
+                <i class="fa-solid fa-chevron-left text-gray-400"></i>
+                <div class="flex flex-row items-center gap-2">
+                  <div class="bg-primary--main rounded-full w-12 h-3"></div>
+                  <div class="bg-primary--soft rounded-full w-3 h-3"></div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-gray-400"></i>
+              </div>
+            </div>
+            <!-- 3. Form Input -->
+            <div class="flex-1 w-full space-y-4">
+              <div class="">
+                <div class="font-semibold text-primary--main">No. Polis</div>
+                <div class="block w-full bg-primary--light p-3 border-b border-primary--main outline-none">
+                  <span class="text-primary--main">30823041</span>
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold text-primary--main">Jenis Polis</div>
+                <div class="block w-full bg-primary--light p-3 border-b border-primary--main outline-none">
+                  <span class="text-primary--main">Asuransi Hewan Peliharaan</span>
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold text-primary--main">Kelas</div>
+                <div class="block w-full bg-primary--light p-3 border-b border-primary--main outline-none">
+                  <span class="text-primary--main">Classic</span>
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold text-primary--main">Manfaat</div>
+                <div class="block w-full bg-primary--light p-3 border-b border-primary--main outline-none">
+                  <ul class="text-primary--main">
+                    <li>Fasilitas Kesehatan</li>
+                    <li>Pelayanan Dokter Hewan</li>
+                    <li>Pelayanan Care</li>
+                    <li>Asuransi Kematian Hewan</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="font-semibold text-primary--main">Nominal Saldo Klaim</div>
+                <div class="block w-full bg-primary--light p-3 border-b border-primary--main outline-none">
+                  <span class="text-primary--main">Rp20.000.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2 : Daftar Hewan -->
+        <div id="adopsi" class="hidden relative overflow-x-auto">
+          <h2 id="title" class="font-bold text-black text-xl mb-4">Daftar Hewan</h2>
+
+          <div id="tables" class="min-w-[1025px] lg:min-w-none">
+            <!-- Tables Row item -->
+            <div class="flex flex-row items-start gap-6 py-2 border-b border-primary--soft hover:border-primary--main duration-200">
+              <div class="flex items-center justify-center w-7 h-7 rounded-full bg-primary--main text-white">1</div>
+              <div class="flex-1 flex flex-row items-start gap-4">
+                <img src="https://placehold.co/100x100.png" alt="" class="w-14 h-14 rounded-md object-cover" />
+                <div>
+                  <div class="text-xs text-primary--soft">ID-Hewan</div>
+                  <div class="mt-4 font-bold text-sm text-primary--main">123456</div>
+                </div>
+              </div>
+              <div class="flex-1">
+                <div class="text-xs text-primary--soft">Nama</div>
+                <div class="mt-4 font-bold text-sm text-primary--main">Mark</div>
+              </div>
+              <div class="flex-1">
+                <div class="text-xs text-primary--soft">Jenis</div>
+                <div class="mt-4 font-bold text-sm text-primary--main">Kucing</div>
+              </div>
+              <div class="flex-1">
+                <div class="text-xs text-primary--soft">Asuransi Aktif</div>
+                <div class="mt-4 font-bold text-sm text-primary--main">CLASSIC (Hewan Peliharaan)</div>
+              </div>
+              <a href="#" class="block px-4 bg-primary--main rounded-md py-1 text-xs text-white mt-4 hover:bg-primary--main-hover">Edit</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3 : Riwayat Transaksi -->
+        <div id="riwayat-transaksi" class="hidden">
+          <h2 id="title" class="font-bold text-black text-xl mb-4">Data Riwayat Transaksi</h2>
+
+          <div class="flex flex-row items-center gap-4">
+            <input type="checkbox" class="w-6 h-6" />
+            <div class="flex-1 relative mt-4 mb-6">
+              <span class="sr-only">Search</span>
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                <i class="fa-solid fa-search text-primary--main"></i>
+              </div>
+              <input
+                type="text"
+                id="input-group-1"
+                class="bg-primary--light border border-primary--main text-gray-900 text-sm rounded-full block w-full ps-10 p-4"
+                placeholder="Cari transaksi" />
+            </div>
+          </div>
+
+          <div class="relative overflow-x-auto">
+            <div id="table-transaction" class="min-w-[1024px]">
+              <!-- Tables Row item -->
+              <div class="flex flex-row items-center gap-4 py-2 border-b border-primary--soft hover:border-primary--main duration-200">
+                <input type="checkbox" class="w-4 h-4" />
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">12 Agustus 2023</div>
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Donasi DAS</div>
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Rp150.000</div>
+                <div class="font-medium text-sm lg:text-base text-primary--main bg-primary--soft px-4 py-2 rounded-lg">Donasi</div>
+                <div class="font-medium text-sm lg:text-base text-green-500 bg-green-100 px-4 py-2 rounded-lg">Success</div>
+                <a href="#" class="font-medium text-sm lg:text-base text-white bg-primary--main hover:bg-primary--main-hover px-4 py-2 rounded-lg"
+                  >Detail</a
+                >
+              </div>
+              <!-- Tables Row item -->
+              <div class="flex flex-row items-center gap-4 py-2 border-b border-primary--soft hover:border-primary--main duration-200">
+                <input type="checkbox" class="w-4 h-4" />
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">12 Agustus 2023</div>
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Donasi DAS</div>
+                <div class="flex-1 font-bold text-sm lg:text-base text-primary--main">Rp150.000</div>
+                <div class="font-medium text-sm lg:text-base text-primary--main bg-primary--soft px-4 py-2 rounded-lg">Donasi</div>
+                <div class="font-medium text-sm lg:text-base text-green-500 bg-green-100 px-4 py-2 rounded-lg">Success</div>
+                <a href="#" class="font-medium text-sm lg:text-base text-white bg-primary--main hover:bg-primary--main-hover px-4 py-2 rounded-lg"
+                  >Detail</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4 : Donasi -->
+        <div id="donasi" class="">
+          <div class="bg-primary--main p-6 pb-18 rounded-t-2xl">
+            <h2 id="title" class="font-bold text-white text-3xl mb-2 text-center">Donasi</h2>
+            <p class="text-sm text-white text-center mb-4">Seluruh Data Donasi Anda tercatat dengan baik dan transparan</p>
+            <div id="card-rank" class="swiper mt-12">
+              <div class="swiper-wrapper">
+                <!-- Script Data Rank -->
+              </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto mt-12">
+              <div class="bg-primary--dark/50 rounded-t-xl flex flex-col lg:flex-row items-start px-4 py-6 gap-3 lg:gap-6">
+                <div class="flex-1">
+                  <p class="text-white text-xs">Total Donasi saat ini</p>
+                  <h5 class="font-bold text-2xl text-white mt-2">Rp22.500.000</h5>
+                </div>
+                <div class="h-20 w-[1px] bg-white/50"></div>
+                <div class="flex-1">
+                  <p class="text-white text-xs">
+                    Poin anda sekarang sebagai<br />
+                    <span id="donatur-rank-name" class="font-bold">Donatur Silver</span>
+                  </p>
+                  <h5 class="font-bold text-2xl text-white mt-2">22.500 poin</h5>
+                </div>
+                <div class="h-20 w-[1px] bg-white/50"></div>
+                <div class="flex-1">
+                  <div class="text-white text-xs">Level selanjutnya</div>
+                  <div class="flex flex-row items-center gap-4 mt-2">
+                    <img id="next-level-img" src="assets/ilustration/donais-3-gold-color.png" alt="" class="w-14 h-14" />
+                    <div class="font-bold text-white">
+                      <div id="next-level-name">Gold</div>
+                      <div id="next-level-point" class="text-xl">5.000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white/10 rounded-b-xl p-8 text-sm text-white">
+                <h5 id="rank-greeting">Mantap, sekarang kamu jadi Donatur Silver! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reward -->
+          <div class="bg-gradient-to-b from-primary--main to-primary--dark rounded-b-[100px]">
+            <div class="max-w-6xl mx-auto relative px-6 pb-56">
+              <h2 class="font-bold text-white text-4xl text-center">Reward</h2>
+              <p class="text-white text-lg text-center">Klaim berbagai reward yang anda bisa gunakan</p>
+              <div class="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-4">
+                <!-- Rewared Item -->
+                <div class="relative">
+                  <div class="grid grid-cols-3 items-center">
+                    <div class="h-full bg-violet-100 text-center flex items-center justify-center">
+                      <p class="text-primary--main text-base">Voucher <span class="font-bold text-2xl">Yasindo</span></p>
+                    </div>
+                    <div class="col-span-2 bg-gradient-to-r from-violet-700 to-primary--dark p-4">
+                      <div class="text-white/80">DISCOUNT</div>
+                      <div class="font-bold text-xl text-white">Rp150.000</div>
+                      <div class="text-white/80 text-[7pt] mt-3">*Applicable Terms & Conditions</div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row items-center justify-between bg-white p-4">
+                    <div>
+                      <div class="text-gray-500 text-xs">Expired</div>
+                      <p class="font-semibold text-xs text-red-500">10 Oktober 2025</p>
+                    </div>
+                    <button class="block px-4 py-2 rounded-sm bg-primary--main text-white text-xs hover:bg-primary--dark duration-200">Klaim</button>
+                  </div>
+                </div>
+                <!-- Rewared Item -->
+                <div class="relative">
+                  <div class="grid grid-cols-3 items-center">
+                    <div class="h-full bg-violet-100 text-center flex items-center justify-center">
+                      <p class="text-primary--main text-base">Voucher <span class="font-bold text-2xl">Yasindo</span></p>
+                    </div>
+                    <div class="col-span-2 bg-gradient-to-r from-violet-700 to-primary--dark p-4">
+                      <div class="text-white/80">DISCOUNT</div>
+                      <div class="font-bold text-xl text-white">Rp150.000</div>
+                      <div class="text-white/80 text-[7pt] mt-3">*Applicable Terms & Conditions</div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row items-center justify-between bg-white p-4">
+                    <div>
+                      <div class="text-gray-500 text-xs">Expired</div>
+                      <p class="font-semibold text-xs text-red-500">10 Oktober 2025</p>
+                    </div>
+                    <button class="block px-4 py-2 rounded-sm bg-primary--main text-white text-xs hover:bg-primary--dark duration-200">Klaim</button>
+                  </div>
+                </div>
+                <!-- Rewared Item -->
+                <div class="relative">
+                  <div class="grid grid-cols-3 items-center">
+                    <div class="h-full bg-violet-100 text-center flex items-center justify-center">
+                      <p class="text-primary--main text-base">Voucher <span class="font-bold text-2xl">Yasindo</span></p>
+                    </div>
+                    <div class="col-span-2 bg-gradient-to-r from-violet-700 to-primary--dark p-4">
+                      <div class="text-white/80">DISCOUNT</div>
+                      <div class="font-bold text-xl text-white">Rp150.000</div>
+                      <div class="text-white/80 text-[7pt] mt-3">*Applicable Terms & Conditions</div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row items-center justify-between bg-white p-4">
+                    <div>
+                      <div class="text-gray-500 text-xs">Expired</div>
+                      <p class="font-semibold text-xs text-red-500">10 Oktober 2025</p>
+                    </div>
+                    <button class="block px-4 py-2 rounded-sm bg-primary--main text-white text-xs hover:bg-primary--dark duration-200">Klaim</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-center mt-12">
+                <a
+                  href="#"
+                  class="inline-block mx-auto bg-primary--soft px-4 py-2 rounded-md font-semibold text-xs text-primary--dark hover:bg-purple-300 duration-200"
+                  >Lihat lebih banyak</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Wrapper Donasi -->
+          <div class="max-w-6xl mx-auto relative z-20 -mt-36">
+            <div class="bg-white p-3 lg:p-6 rounded-xl shadow-lg">
+              <h3 class="font-bold text-black text-2xl">Daftar Riwayat Poin</h3>
+
+              <!-- List Donasi -->
+              <div class="relative mt-12 grid grid-cols-1 gap-4">
+                <!-- Donasi Card Item -->
+                <div class="flex flex-col rounded-xl overflow-hidden">
+                  <div class="flex-3 p-3 bg-primary--light">
+                    <div class="bg-white p-3 rounded-xl">
+                      <p class="font-semibold text-sm text-primary--main">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptate molestiae sunt cum dolorum repudiandae
+                        asperiores et dignissimos nostrum eos necessitatibus minus perferendis amet suscipit modi! Commodi quam sint pariatur?
+                      </p>
+                    </div>
+                    <div class="grid grid-cols-2 lg:grid-cols-6 gap-2 mt-3">
+                      <div
+                        class="lg:col-span-5 bg-primary--main rounded-lg px-4 py-2 text-white font-semibold text-sm lg:text-base flex items-center">
+                        Berdonasi Sebesar Rp 1.000.000
+                      </div>
+                      <div class="p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
+                        <p class="text-green-900 text-sm">Mendapatkan Poin</p>
+                        <h5 class="font-bold text-white text-lg lg:text-xl">100+ Poin</h5>
+                      </div>
+                    </div>
+                    <div class="bg-primary--soft h-[1px] w-full my-2"></div>
+                    <div class="flex flex-row items-center justify-between">
+                      <p class="text-gray-700 text-xs lg:text-base">27 Oktober 2025, 16:21 WIB</p>
+                      <a href="#" class="block px-12 py-2 rounded-lg bg-primary--soft text-sm text-primary--dark font-semibold">Detail</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Donasi Card Item -->
+                <div class="flex flex-col rounded-xl overflow-hidden">
+                  <div class="flex-3 p-3 bg-primary--light">
+                    <div class="bg-white p-3 rounded-xl">
+                      <p class="font-semibold text-sm text-primary--main">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptate molestiae sunt cum dolorum repudiandae
+                        asperiores et dignissimos nostrum eos necessitatibus minus perferendis amet suscipit modi! Commodi quam sint pariatur?
+                      </p>
+                    </div>
+                    <div class="grid grid-cols-2 lg:grid-cols-6 gap-2 mt-3">
+                      <div
+                        class="lg:col-span-5 bg-primary--main rounded-lg px-4 py-2 text-white font-semibold text-sm lg:text-base flex items-center">
+                        Berdonasi Sebesar Rp 1.000.000
+                      </div>
+                      <div class="p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
+                        <p class="text-green-900 text-sm">Mendapatkan Poin</p>
+                        <h5 class="font-bold text-white text-lg lg:text-xl">100+ Poin</h5>
+                      </div>
+                    </div>
+                    <div class="bg-primary--soft h-[1px] w-full my-2"></div>
+                    <div class="flex flex-row items-center justify-between">
+                      <p class="text-gray-700 text-xs lg:text-base">27 Oktober 2025, 16:21 WIB</p>
+                      <a href="#" class="block px-12 py-2 rounded-lg bg-primary--soft text-sm text-primary--dark font-semibold">Detail</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Donasi Card Item -->
+                <div class="flex flex-col rounded-xl overflow-hidden">
+                  <div class="flex-3 p-3 bg-primary--light">
+                    <div class="bg-white p-3 rounded-xl">
+                      <p class="font-semibold text-sm text-primary--main">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptate molestiae sunt cum dolorum repudiandae
+                        asperiores et dignissimos nostrum eos necessitatibus minus perferendis amet suscipit modi! Commodi quam sint pariatur?
+                      </p>
+                    </div>
+                    <div class="grid grid-cols-2 lg:grid-cols-6 gap-2 mt-3">
+                      <div
+                        class="lg:col-span-5 bg-primary--main rounded-lg px-4 py-2 text-white font-semibold text-sm lg:text-base flex items-center">
+                        Berdonasi Sebesar Rp 1.000.000
+                      </div>
+                      <div class="p-2 rounded-lg bg-gradient-to-br from-[#D6FAAD] via-[#63AD0E] to-[#294706]">
+                        <p class="text-green-900 text-sm">Mendapatkan Poin</p>
+                        <h5 class="font-bold text-white text-lg lg:text-xl">100+ Poin</h5>
+                      </div>
+                    </div>
+                    <div class="bg-primary--soft h-[1px] w-full my-2"></div>
+                    <div class="flex flex-row items-center justify-between">
+                      <p class="text-gray-700 text-xs lg:text-base">27 Oktober 2025, 16:21 WIB</p>
+                      <a href="#" class="block px-12 py-2 rounded-lg bg-primary--soft text-sm text-primary--dark font-semibold">Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center mt-12">
+                <a
+                  href="#"
+                  class="inline-block mx-auto bg-primary--soft px-4 py-2 rounded-md font-semibold text-xs text-primary--dark hover:bg-purple-300 duration-200"
+                  >Lihat lebih banyak</a
+                >
+              </div>
+            </div>
+
+            <div class="mt-4 rounded-3xl p-6" style="background: url('assets/images/bg-purple-curly.webp') center/cover">
+              <h3 class="font-semibold text-2xl text-white text-center py-4">Donasi kamu sudah mmebantu banyak hewan</h3>
+              <div class="mt-5">
+                <div id="info-donation" class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="relative rounded-2xl overflow-hidden">
+                        <img src="assets/images/program-1.webp" alt="" class="w-full aspect-4/3 object-cover" />
+                        <div class="p-4 bg-white">
+                          <p class="text-gray-600 text-xs">2 Oktober 2025</p>
+                          <h5 class="font-semibold text-black text-base/5 mt-1">Beasiswa Pendidikan Claon Dokter Hewan / Talent</h5>
+                          <p class="text-gray-600 text-xs mt-4">Telah dibuka pendidikan calon dokter hewan di Jawa Tengah melalui pro...</p>
+                          <a
+                            href="#"
+                            class="block bg-primary--soft rounded-md text-primary--main w--full font-semibold text-center py-2 mt-3 hover:bg-primary--main hover:text-primary--soft duration-100"
+                            >Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="relative rounded-2xl overflow-hidden">
+                        <img src="assets/images/program-2.webp" alt="" class="w-full aspect-4/3 object-cover" />
+                        <div class="p-4 bg-white">
+                          <p class="text-gray-600 text-xs">2 Oktober 2025</p>
+                          <h5 class="font-semibold text-black text-base/5 mt-1">Beasiswa Pendidikan Claon Dokter Hewan / Talent</h5>
+                          <p class="text-gray-600 text-xs mt-4">Telah dibuka pendidikan calon dokter hewan di Jawa Tengah melalui pro...</p>
+                          <a
+                            href="#"
+                            class="block bg-primary--soft rounded-md text-primary--main w--full font-semibold text-center py-2 mt-3 hover:bg-primary--main hover:text-primary--soft duration-100"
+                            >Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="relative rounded-2xl overflow-hidden">
+                        <img src="assets/images/program-3.webp" alt="" class="w-full aspect-4/3 object-cover" />
+                        <div class="p-4 bg-white">
+                          <p class="text-gray-600 text-xs">2 Oktober 2025</p>
+                          <h5 class="font-semibold text-black text-base/5 mt-1">Beasiswa Pendidikan Claon Dokter Hewan / Talent</h5>
+                          <p class="text-gray-600 text-xs mt-4">Telah dibuka pendidikan calon dokter hewan di Jawa Tengah melalui pro...</p>
+                          <a
+                            href="#"
+                            class="block bg-primary--soft rounded-md text-primary--main w--full font-semibold text-center py-2 mt-3 hover:bg-primary--main hover:text-primary--soft duration-100"
+                            >Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="relative rounded-2xl overflow-hidden">
+                        <img src="assets/images/program-1.webp" alt="" class="w-full aspect-4/3 object-cover" />
+                        <div class="p-4 bg-white">
+                          <p class="text-gray-600 text-xs">2 Oktober 2025</p>
+                          <h5 class="font-semibold text-black text-base/5 mt-1">Beasiswa Pendidikan Claon Dokter Hewan / Talent</h5>
+                          <p class="text-gray-600 text-xs mt-4">Telah dibuka pendidikan calon dokter hewan di Jawa Tengah melalui pro...</p>
+                          <a
+                            href="#"
+                            class="block bg-primary--soft rounded-md text-primary--main w--full font-semibold text-center py-2 mt-3 hover:bg-primary--main hover:text-primary--soft duration-100"
+                            >Selengkapnya</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary--main">
+      <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div>
+            <img src="assets/logo/brand.webp" alt="YASINDO Logo" class="h-15 object-contain" />
+            <p class="text-white text-sm mt-4">
+              YASINDO adalah platform asuransi hewan peliharaan dan ternak terkemuka di Indonesia, menyediakan perlindungan komprehensif untuk
+              kesehatan dan kesejahteraan hewan Anda.
+            </p>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Compoany</h6>
+            <ul class="mt-4 *:mt-2">
+              <li><a href="#" class="text-white hover:text-white/80">Produk</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Partnership</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Tentang Kita</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Tearms</a></li>
+              <li><a href="#" class="text-white hover:text-white/80">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Subscribe</h6>
+            <div class="mt-4">
+              <p class="text-white/50">Subscribe to stay tuned for new web design and latest updates. Let's do it!</p>
+              <div class="flex flex-col items-start gap-4 mt-4">
+                <input class="bg-white w-[90%] rounded-lg h-9" />
+                <button class="bg-primary--dark text-white text-sm rounded-lg px-6 py-2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-bold text-white text-lg">Sosial Media</h6>
+            <ul class="mt-4 *:mt-2">
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-facebook-f"></i> Facbook</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-x"></i> X</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-white/80"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-200 mt-8 pt-6 text-center">
+          <p class="text-sm text-white/70">&copy; 2025 YASINDO. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Tab -->
+    <script>
+      // Tabs
+      const tabs = document.querySelectorAll("#tabs div");
+      const contents = document.querySelectorAll("#content-tab-wrapper > div");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active class from all tabs
+          tabs.forEach((t) => t.classList.remove("active"));
+          // Add active class to the clicked tab
+          tab.classList.add("active");
+
+          // Hide all content
+          contents.forEach((content) => content.classList.add("hidden"));
+          // Show the content corresponding to the clicked tab
+          const target = document.querySelector(tab.getAttribute("data-content-target"));
+          if (target) {
+            target.classList.remove("hidden");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      const swiperInfoDonasi = new Swiper("#info-donation", {
+        direction: "horizontal",
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 24,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script>
+      const swiperCardRank = new Swiper("#card-rank", {
+        direction: "horizontal",
+        slidesPerView: 3,
+        spaceBetween: 24,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const mypoint = 4000;
+      const highestPoint = 30000; // a.k Crown
+      const dataRank = [
+        {
+          key: "basic",
+          name: "Basic",
+          point: 500,
+          img: "assets/images/card-donatur-basic.png",
+          icon: "assets/ilustration/donasi-1-basic.png",
+          greeting: "Mantap, sekarang kamu jadi Donatur Basic! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Basic",
+        },
+        {
+          key: "silver",
+          name: "Silver",
+          point: 1250,
+          img: "assets/images/card-donatur-silver.png",
+          icon: "assets/ilustration/donasi-2-silver.png",
+          greeting: "Mantap, sekarang kamu jadi Donatur Silver! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Silver",
+        },
+        {
+          key: "gold",
+          name: "Gold",
+          img: "assets/images/card-donatur-gold.png",
+          icon: "assets/ilustration/donasi-3-gold.png",
+          point: 5000,
+          greeting: "Mantap, sekarang kamu jadi Donatur Gold! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Gold",
+        },
+        {
+          key: "platinum",
+          name: "Platinum",
+          img: "assets/images/card-donatur-platinum.png",
+          icon: "assets/ilustration/donasi-4-platinum.png",
+          point: 10000,
+          greeting: "Mantap, sekarang kamu jadi Donatur Platinum! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Platinum",
+        },
+        {
+          key: "diamond",
+          name: "Diamond",
+          img: "assets/images/card-donatur-diamond.png",
+          icon: "assets/ilustration/donasi-5-diamond.png",
+          point: 17500,
+          greeting: "Mantap, sekarang kamu jadi Donatur Diamond! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Diamond",
+        },
+        {
+          key: "crown",
+          name: "Crown",
+          img: "assets/images/card-donatur-crown.png",
+          icon: "assets/ilustration/donasi-6-crown.png",
+          point: 30000,
+          greeting: "Mantap, sekarang kamu jadi Donatur Crown! Kumpulkan poin dengan donasi rutin dan dapatkan manfaatnya!",
+          honor: "Donatur Crown",
+        },
+      ];
+
+      const wrapper = document.querySelector("#card-rank .swiper-wrapper");
+      const activeIndex = dataRank.findLastIndex((m) => mypoint >= m.point);
+      const startPoint = dataRank[activeIndex].point ?? 0;
+      const endPoint = dataRank[activeIndex + 1].point ?? 0;
+      const percent = ((mypoint - startPoint) / (endPoint - startPoint)) * 100;
+      const clampedPercent = Math.max(0, Math.min(100, percent));
+
+      swiperCardRank.slideTo(activeIndex);
+      dataRank.forEach((rank, index) => {
+        let status = "";
+        if (index < activeIndex) status = "passed"; // completed
+        else if (index === activeIndex) status = "active"; // current
+        else status = "upcoming"; // not yet
+
+        const slide = document.createElement("div");
+        slide.className = "swiper-slide";
+        slide.innerHTML = `
+           <div class="relative rounded-2xl overflow-hidden">
+              <img src="${rank.img}" alt="" class="w-full object-cover" />
+              ${
+                status == "passed"
+                  ? `<div class="bg-white px-4 h-18 flex justify-center">
+                    <div class="flex flex-row items-center gap-2">
+                      <i class="fa-solid fa-circle-check text-lime-500 text-lg"></i>
+                      <p class="font-semibold text-xs lg:text-sm text-lime-500">Selamat! Level ini berhasil anda capai!</p>
+                    </div>
+                  </div>`
+                  : ""
+              }
+              ${
+                status == "active"
+                  ? `<div class="bg-white p-4 h-18 flex flex-col justify-center">
+                  ${
+                    index == dataRank.length - 1
+                      ? `
+                     <div class="flex flex-row items-center gap-4">
+                      <i class="fa-solid fa-circle-check text-primary--dark text-lg"></i>
+                      <p class="font-semibold text-xs lg:text-sm text-primary--dark">Selamat! Anda berhasil menjadi Donatur terbaik, pertahankan ya!</p>
+                    </div>
+                  `
+                      : `
+                      <div class="flex-1 flex flex-row items-center">
+                        <div class="flex-1 h-2 rounded-l-full bg-primary--soft">
+                          <div class="h-full w-[${clampedPercent}%] bg-primary--main rounded-full"></div>
+                        </div>
+                        <div class="flex items-center justify-center h-8 w-8 rounded-full bg-primary--soft">
+                          <img src="${rank.icon}" alt="" class="w-6 h-6" />
+                        </div>
+                      </div>
+                      <p class="text-xs lg:text-sm text-primary--main">
+                        <span class="font-bold">${mypoint - endPoint}</span> poin lagi untuk naik ke <span class="font-bold">${
+                          dataRank[activeIndex + 1].honor
+                        }</span>
+                      </p>
+                      `
+                  }
+                    </div>`
+                  : ""
+              }
+              ${
+                status == "upcoming"
+                  ? `<div class="bg-white p-4 h-18 flex flex-col justify-center">
+                      <div class="flex-1 flex flex-row items-center">
+                        <div class="flex-1 h-2 rounded-l-full bg-primary--soft">
+                          <div class="h-full w-[0%] bg-primary--main rounded-full"></div>
+                        </div>
+                        <div class="flex items-center justify-center h-8 w-8 rounded-full bg-primary--soft">
+                          <img src="${rank.icon}" alt="" class="w-6 h-6" />
+                        </div>
+                      </div>
+                      <p class="text-xs lg:text-sm text-primary--main">Capai dulu Donatur Silver ya!</p>
+                    </div>
+                    <div class="absolute inset-0 bg-black/70 flex items-center justify-center">
+                      <img src="assets/ilustration/lock.png" alt="locked" class="w-28 h-28" />
+                    </div>`
+                  : ""
+              }
+             </div>
+        `;
+
+        wrapper.appendChild(slide);
+      });
+
+      // Next Level rank
+      const textMorePoint = document.getElementById("need-more-point");
+      textMorePoint.innerText = (dataRank[activeIndex + 1]?.point - mypoint).toLocaleString("id", Intl.NumberFormat("id"));
+
+      const donaturRankName = document.getElementById("donatur-rank-name");
+      donaturRankName.innerText = dataRank[activeIndex + 1]?.honor;
+
+      const nextLevelName = document.getElementById("next-level-name");
+      nextLevelName.innerText = dataRank[activeIndex + 1]?.name;
+
+      const nextLevelPoint = document.getElementById("next-level-point");
+      nextLevelPoint.innerText = dataRank[activeIndex + 1]?.point;
+
+      const nextLevelImg = document.getElementById("next-level-img");
+      nextLevelImg.src = dataRank[activeIndex + 1]?.icon;
+
+      const textRankGreeting = document.getElementById("rank-greeting");
+      textRankGreeting.innerText = dataRank[activeIndex]?.greeting;
+    </script>
+  </body>
+</html>
+
+<!--  -->
+2000 1000 4000
